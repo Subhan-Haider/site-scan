@@ -19,7 +19,7 @@ permissions:
 
 env:
   IMAGE_NAME: site-scan
-  DOCKER_USER: lissy93
+  DOCKER_USER: Subhan-Haider
   GHCR_REGISTRY: ghcr.io
   DOCKERHUB_REGISTRY: docker.io
 

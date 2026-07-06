@@ -148,7 +148,7 @@ const About = (): JSX.Element => {
       <AboutContainer>
         <Nav>
           <HeaderLinkContainer>
-            <a target="_blank" rel="noreferrer" href="https://github.com/lissy93/site-scan">
+            <a target="_blank" rel="noreferrer" href="https://github.com/Subhan-Haider/site-scan">
               <Button>View on GitHub</Button>
             </a>
           </HeaderLinkContainer>
@@ -207,7 +207,7 @@ const About = (): JSX.Element => {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/Lissy93/site-scan/blob/master/LICENSE"
+              href="https://github.com/Subhan-Haider/site-scan/blob/master/LICENSE"
             >
               MIT license
             </a>
@@ -215,11 +215,11 @@ const About = (): JSX.Element => {
             settings.
             <br />
             Source code and self-hosting docs are available on{' '}
-            <a target="_blank" rel="noreferrer" href="https://github.com/lissy93/site-scan">
+            <a target="_blank" rel="noreferrer" href="https://github.com/Subhan-Haider/site-scan">
               GitHub
             </a>
             . If you've found this service useful, consider{' '}
-            <a target="_blank" rel="noreferrer" href="https://github.com/sponsors/Lissy93">
+            <a target="_blank" rel="noreferrer" href="https://github.com/sponsors/Subhan-Haider">
               sponsoring me
             </a>{' '}
             from $1/month, to help with the ongoing hosting and development costs.
@@ -322,7 +322,7 @@ const About = (): JSX.Element => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://app.netlify.com/start/deploy?repository=https://github.com/lissy93/site-scan"
+            href="https://app.netlify.com/start/deploy?repository=https://github.com/Subhan-Haider/site-scan"
           >
             <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />
           </a>
@@ -334,7 +334,7 @@ const About = (): JSX.Element => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Flissy93%2Fsite-scan&project-name=site-scan&repository-name=site-scan-fork&demo-title=SiteScan%20Demo&demo-description=Check%20out%20site-scan.xyz%20to%20see%20a%20live%20demo%20of%20this%20application%20running.&demo-url=https%3A%2F%2Fsite-scan.xyz&demo-image=https%3A%2F%2Fraw.githubusercontent.com%2FLissy93%2Fsite-scan%2Fmaster%2F.github%2Fscreenshots%2Fsite-scan-screenshot10.png"
+            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSubhan-Haider%2Fsite-scan&project-name=site-scan&repository-name=site-scan-fork&demo-title=SiteScan%20Demo&demo-description=Check%20out%20site-scan.subhan.tech%20to%20see%20a%20live%20demo%20of%20this%20application%20running.&demo-url=https%3A%2F%2Fsite-scan.subhan.tech&demo-image=https%3A%2F%2Fraw.githubusercontent.com%2FSubhan-Haider%2Fsite-scan%2Fmaster%2F.github%2Fscreenshots%2Fsite-scan-screenshot10.png"
           >
             <img src="https://vercel.com/button" alt="Deploy with Vercel" />
           </a>
@@ -344,19 +344,19 @@ const About = (): JSX.Element => {
           </Heading>
           <p>
             A Docker container is published to{' '}
-            <a target="_blank" rel="noreferrer" href="https://hub.docker.com/r/lissy93/site-scan">
+            <a target="_blank" rel="noreferrer" href="https://hub.docker.com/r/Subhan-Haider/site-scan">
               DockerHub
             </a>
             <br />
             Run this command, then open <code>localhost:3000</code>
-            <pre>docker run -p 3000:3000 lissy93/site-scan</pre>
+            <pre>docker run -p 3000:3000 Subhan-Haider/site-scan</pre>
           </p>
 
           <Heading as="h3" size="small" color={colors.primary}>
             Option #4 - Manual
           </Heading>
           <pre>
-            git clone https://github.com/Lissy93/site-scan.git
+            git clone https://github.com/Subhan-Haider/site-scan.git
             <br />
             cd site-scan # Move into the project directory
             <br />
@@ -374,8 +374,8 @@ const About = (): JSX.Element => {
           <p>
             More detailed installation and setup instructions can be found in the GitHub repository
             -{' '}
-            <a target="_blank" rel="noreferrer" href="https://github.com/lissy93/site-scan#readme">
-              github.com/lissy93/site-scan
+            <a target="_blank" rel="noreferrer" href="https://github.com/Subhan-Haider/site-scan#readme">
+              github.com/Subhan-Haider/site-scan
             </a>
           </p>
 
@@ -445,7 +445,7 @@ const About = (): JSX.Element => {
             License
           </Heading>
           <b>
-            <a target="_blank" rel="noreferrer" href="https://github.com/lissy93/site-scan">
+            <a target="_blank" rel="noreferrer" href="https://github.com/Subhan-Haider/site-scan">
               SiteScan
             </a>{' '}
             is distributed under the MIT license, ©{' '}

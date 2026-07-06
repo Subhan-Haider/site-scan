@@ -41,13 +41,13 @@ const ALink = styled.a`
 `;
 
 const Footer = (props: { isFixed?: boolean }): JSX.Element => {
-  const licenseUrl = 'https://github.com/lissy93/site-scan/blob/master/LICENSE';
+  const licenseUrl = 'https://github.com/Subhan-Haider/site-scan/blob/master/LICENSE';
   const authorUrl = 'https://aliciasykes.com';
-  const githubUrl = 'https://github.com/lissy93/site-scan';
+  const githubUrl = 'https://github.com/Subhan-Haider/site-scan';
   return (
     <StyledFooter style={props.isFixed ? { position: 'fixed' } : {}}>
       <span>
-        View source at <ALink href={githubUrl}>github.com/lissy93/site-scan</ALink>
+        View source at <ALink href={githubUrl}>github.com/Subhan-Haider/site-scan</ALink>
       </span>
       <span>
         <Link to="/about">SiteScan</Link> is licensed under <ALink href={licenseUrl}>MIT</ALink> -

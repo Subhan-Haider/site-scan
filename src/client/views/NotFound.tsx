@@ -63,7 +63,7 @@ const NotFound = (): JSX.Element => {
               <Button>Back to Homepage</Button>
             </a>
           </HeaderLinkContainer>
-          <a target="_blank" rel="noreferrer" href="https://github.com/lissy93/site-scan">
+          <a target="_blank" rel="noreferrer" href="https://github.com/Subhan-Haider/site-scan">
             Report Issue
           </a>
         </NotFoundInner>

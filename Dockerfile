@@ -61,11 +61,11 @@ ENV CHROME_PATH='/usr/bin/chromium' \
     PUPPETEER_SKIP_DOWNLOAD='true'
 
 LABEL org.opencontainers.image.title="SiteScan" \
-      org.opencontainers.image.description="A custom tool for analysing websites" \
-      org.opencontainers.image.url="https://site-scan.xyz" \
-      org.opencontainers.image.source="https://github.com/lissy93/site-scan" \
+      org.opencontainers.image.description="The ultimate all-in-one OSINT and website analysis tool. Instantly uncover infrastructure, security, DNS records, and performance metrics for any domain." \
+      org.opencontainers.image.url="https://site-scan.subhan.tech" \
+      org.opencontainers.image.source="https://github.com/Subhan-Haider/site-scan" \
       org.opencontainers.image.licenses="MIT" \
-      org.opencontainers.image.vendor="Jane Doe"
+      org.opencontainers.image.vendor="Subhan Haider"
 
 # Define the command executed when the container starts and start the server.js of the Node.js application
 CMD ["yarn", "start"]

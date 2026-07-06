@@ -2,7 +2,7 @@ version: '3.9'
 services:
   site-scan:
     container_name: SiteScan
-    image: lissy93/site-scan
+    image: Subhan-Haider/site-scan
     ports:
       - 3000:3000
     restart: unless-stopped

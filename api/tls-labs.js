@@ -11,7 +11,7 @@ const tlsLabsHandler = async (url) => {
   try {
     const res = await httpGet(SSL_LABS, {
       params: { host: hostname, fromCache: 'on', maxAge: 168, all: 'done' },
-      headers: { 'User-Agent': 'site-scan (https://site-scan.xyz)' },
+      headers: { 'User-Agent': 'site-scan (https://site-scan.subhan.tech)' },
     });
     const data = res.data;
     if (data?.status === 'READY' && data.endpoints?.length) return data;

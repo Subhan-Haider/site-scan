@@ -215,7 +215,7 @@ const Home = (): JSX.Element => {
         <p>
           It's free, open source, and funded by the community. If it's been useful, you can keep it
           going (and ad-free) by{' '}
-          <a target="_blank" rel="noreferrer" href="https://github.com/sponsors/Lissy93">
+          <a target="_blank" rel="noreferrer" href="https://github.com/sponsors/Subhan-Haider">
             sponsoring me on GitHub
           </a>
           . Every bit genuinely helps, thank you
@@ -243,7 +243,7 @@ const Home = (): JSX.Element => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/lissy93/site-scan"
+            href="https://github.com/Subhan-Haider/site-scan"
             title="Check out the source code and documentation on GitHub, and get support or contribute"
           >
             <Button>View on GitHub</Button>
@@ -251,7 +251,7 @@ const Home = (): JSX.Element => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://app.netlify.com/start/deploy?repository=https://github.com/lissy93/site-scan"
+            href="https://app.netlify.com/start/deploy?repository=https://github.com/Subhan-Haider/site-scan"
             title="Deploy your own private or public instance of SiteScan to Netlify"
           >
             <Button>Deploy your own</Button>

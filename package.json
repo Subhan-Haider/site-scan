@@ -2,7 +2,7 @@
   "name": "site-scan",
   "type": "module",
   "version": "2.1.9",
-  "homepage": "https://site-scan.xyz",
+  "homepage": "https://site-scan.subhan.tech",
   "engines": {
     "node": ">=22"
   },

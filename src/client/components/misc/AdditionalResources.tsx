@@ -317,8 +317,8 @@ const AdditionalResources = (props: { url?: string }): JSX.Element => {
         <br />
         At the time of listing, all of the above were available and free to use - if this changes,
         please report it via GitHub (
-        <a target="_blank" rel="noreferrer" href="https://github.com/lissy93/site-scan">
-          lissy93/site-scan
+        <a target="_blank" rel="noreferrer" href="https://github.com/Subhan-Haider/site-scan">
+          Subhan-Haider/site-scan
         </a>
         ).
       </Note>

@@ -38,22 +38,22 @@ def replace_branding(root_dir, replacements):
 
 def main():
     parser = argparse.ArgumentParser(description="Change Web-Check branding")
-    parser.add_argument('--name', help="New app name")
-    parser.add_argument('--slug', help="New app slug")
-    parser.add_argument('--url', help="New app URL")
-    parser.add_argument('--repo', help="New GitHub repo")
-    parser.add_argument('--author', help="New author name")
+    parser.add_argument('--name', help="New app name (e.g. 'SiteScan')")
+    parser.add_argument('--slug', help="New app slug (e.g. 'site-scan')")
+    parser.add_argument('--url', help="New app URL (e.g. 'https://site-scan.subhan.tech')")
+    parser.add_argument('--repo', help="New GitHub repo (e.g. 'Subhan-Haider/site-scan')")
+    parser.add_argument('--author', help="New author name (e.g. 'Subhan Haider')")
     parser.add_argument('--desc', help="New description")
     
     args = parser.parse_args()
     
-    # We use the previous placeholder values as the old strings to replace
+    # Mapping current strings to the new arguments
     replacements = {
-        "My App": args.name,
-        "my-app": args.slug,
-        "https://myapp.com": args.url,
-        "janedoe/my-app": args.repo,
-        "Jane Doe": args.author,
+        "SiteScan": args.name,
+        "site-scan": args.slug,
+        "https://site-scan.subhan.tech": args.url,
+        "Subhan-Haider/site-scan": args.repo,
+        "Subhan Haider": args.author,
         "A custom tool for analysing websites": args.desc
     }
     
