@@ -1,0 +1,11 @@
+---
+import BaseLayout from '@layouts/Base.astro';
+import Main from '../client/main.tsx';
+import '../client/styles/index.css';
+
+export const prerender = false;
+---
+
+<BaseLayout title="Terms of Service | SiteScan">
+  <Main client:only="react" />
+</BaseLayout>

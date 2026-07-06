@@ -6,42 +6,58 @@ import Footer from 'client/components/misc/Footer';
 import Heading from 'client/components/Form/Heading';
 import { StyledCard } from 'client/components/Form/Card';
 import colors from 'client/styles/colors';
-import FancyBackground from 'client/components/misc/FancyBackground';
+
+const BackLink = styled.a`
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: ${colors.primary};
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  transition: gap 0.2s ease;
+  &:hover { gap: 0.7rem; text-decoration: underline; }
+`;
+
+const PageWrapper = styled.div`
+  min-height: 100vh;
+  background: ${colors.background};
+`;
 
 const PageContainer = styled.div`
   width: 95vw;
   max-width: 800px;
-  margin: 2rem auto;
-  padding-bottom: 4rem;
+  margin: 0 auto;
+  padding: 3rem 0 4rem 0;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  position: relative;
-  z-index: 2;
   font-family: var(--font-mono);
 `;
 
 const ContentCard = styled(StyledCard)`
-  padding: 3rem;
+  padding: 2.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  line-height: 1.6;
+  gap: 1.2rem;
+  line-height: 1.7;
   color: ${colors.textColor};
+  background: ${colors.backgroundLighter};
 
   h2 {
     color: ${colors.primary};
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0 0.25rem 0;
+    font-size: 1.1rem;
   }
-  
   p {
     margin: 0;
+    font-size: 0.95rem;
   }
-
   ul {
     padding-left: 1.5rem;
     margin: 0;
+    font-size: 0.95rem;
   }
 `;
 
@@ -53,23 +69,21 @@ const Privacy = (): JSX.Element => {
   }, [location]);
 
   return (
-    <div>
-      <FancyBackground />
+    <PageWrapper>
       <PageContainer>
+        <BackLink href="/check">&#8592; Back to SiteScan</BackLink>
         <Heading as="h1" size="large" align="center" color={colors.primary}>
           Privacy Policy
         </Heading>
         <ContentCard>
-          <p>
-            <strong>Last Updated:</strong> July 2026
-          </p>
+          <p><strong>Last Updated:</strong> July 2026</p>
           <p>
             At SiteScan, we believe in transparency and the protection of your privacy. This Privacy Policy outlines how we handle data when you use our web analysis tool.
           </p>
-          
+
           <h2>1. Data Collection</h2>
           <p>
-            SiteScan is designed to gather public data about URLs provided by users. We do not require account creation, and we do not collect personally identifiable information (PII) to operate the core service. 
+            SiteScan is designed to gather public data about URLs provided by users. We do not require account creation, and we do not collect personally identifiable information (PII) to operate the core service.
           </p>
           <p>
             When you enter a URL, the tool queries public records (e.g., DNS, SSL, Headers) and third-party APIs to present an analysis. The URLs you scan may be temporarily logged by the server for rate-limiting, debugging, or abuse prevention, but they are not sold or monetized.
@@ -92,12 +106,14 @@ const Privacy = (): JSX.Element => {
 
           <h2>5. Contact</h2>
           <p>
-            If you have any questions about this Privacy Policy, please open an issue on our GitHub repository.
+            If you have any questions about this Privacy Policy, please email us at{' '}
+            <a href="mailto:support@subhan.tech" style={{ color: 'inherit' }}>support@subhan.tech</a>{' '}
+            or open an issue on our GitHub repository.
           </p>
         </ContentCard>
       </PageContainer>
       <Footer />
-    </div>
+    </PageWrapper>
   );
 };
 

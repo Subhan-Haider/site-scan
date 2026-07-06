@@ -32,6 +32,11 @@ export default function App() {
           <Route path=":urlToScan" element={<Results />} />
           <Route path="*" element={<NotFound />} />
         </Route>
+        <Route path="/" element={<Layout />}>
+          <Route path="about" element={<About />} />
+          <Route path="privacy" element={<Privacy />} />
+          <Route path="terms" element={<Terms />} />
+        </Route>
       </Routes>
     </ErrorBoundary>
   );

@@ -7,41 +7,55 @@ import Button from 'client/components/Form/Button';
 import Heading from 'client/components/Form/Heading';
 import { StyledCard } from 'client/components/Form/Card';
 import colors from 'client/styles/colors';
-import FancyBackground from 'client/components/misc/FancyBackground';
+
+const BackLink = styled.a`
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: ${colors.primary};
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  transition: gap 0.2s ease;
+  &:hover { gap: 0.7rem; text-decoration: underline; }
+`;
+
+const PageWrapper = styled.div`
+  min-height: 100vh;
+  background: ${colors.background};
+`;
 
 const AboutContainer = styled.div`
   width: 95vw;
   max-width: 1000px;
-  margin: 2rem auto;
-  padding-bottom: 4rem;
+  margin: 0 auto;
+  padding: 3rem 0 4rem 0;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  position: relative;
-  z-index: 2;
   font-family: var(--font-mono);
 `;
 
 const HeroSection = styled.section`
   text-align: center;
-  padding: 4rem 1rem 2rem 1rem;
+  padding: 2rem 1rem 1rem 1rem;
   img {
     margin-bottom: 1rem;
   }
   p {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     color: ${colors.textColor};
     max-width: 600px;
-    margin: 1.5rem auto;
+    margin: 1rem auto;
     line-height: 1.6;
   }
 `;
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
 `;
 
 const InfoCard = styled(StyledCard)`
@@ -49,8 +63,9 @@ const InfoCard = styled(StyledCard)`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  background: ${colors.backgroundLighter};
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
+
   &:hover {
     transform: translateY(-5px);
     box-shadow: 6px 6px 0px ${colors.bgShadowColor};
@@ -59,52 +74,50 @@ const InfoCard = styled(StyledCard)`
   h3 {
     color: ${colors.primary};
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   p {
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.6;
     color: ${colors.textColor};
+    font-size: 0.95rem;
   }
   ul {
     padding-left: 1.2rem;
     margin: 0;
-    li {
-      margin-bottom: 0.5rem;
-    }
+    font-size: 0.95rem;
+    li { margin-bottom: 0.4rem; }
   }
 `;
 
 const CTASection = styled.section`
   text-align: center;
-  margin-top: 3rem;
-  padding: 3rem;
+  padding: 2.5rem;
   background: ${colors.backgroundLighter};
   border-radius: 8px;
   box-shadow: 4px 4px 0px ${colors.bgShadowColor};
+
+  p {
+    margin: 0 0 1.5rem 0;
+    color: ${colors.textColor};
+    font-size: 1rem;
+  }
 `;
 
 const About = (): JSX.Element => {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.hash) {
-      setTimeout(() => {
-        const element = document.getElementById(location.hash.slice(1));
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }, 100);
-    }
+    window.scrollTo(0, 0);
   }, [location]);
 
   return (
-    <div>
-      <FancyBackground />
+    <PageWrapper>
       <AboutContainer>
+        <BackLink href="/check">&#8592; Back to SiteScan</BackLink>
         <HeroSection>
           <a href="/">
-            <img width="96" src="/site-scan.png" alt="SiteScan Logo" />
+            <img width="80" src="/site-scan.png" alt="SiteScan Logo" />
           </a>
           <Heading as="h1" size="xLarge" align="center" color={colors.primary}>
             About SiteScan
@@ -118,7 +131,7 @@ const About = (): JSX.Element => {
           <InfoCard>
             <h3>Our Mission</h3>
             <p>
-              SiteScan is an open-source, all-in-one web analysis tool designed to help developers, security researchers, and system administrators quickly gather and analyze public data about any given URL. We believe security should be accessible to everyone, not hidden behind obscure command-line interfaces or expensive enterprise tools.
+              SiteScan is an open-source, all-in-one web analysis tool designed to help developers, security researchers, and system administrators quickly gather and analyze public data about any given URL. We believe security should be accessible to everyone.
             </p>
           </InfoCard>
 
@@ -126,9 +139,9 @@ const About = (): JSX.Element => {
             <h3>The Tech Stack</h3>
             <p>Built for speed and modern aesthetics, SiteScan leverages:</p>
             <ul>
-              <li><strong>Frontend:</strong> Astro, React, and Emotion for dynamic styling.</li>
-              <li><strong>Backend:</strong> Node.js and Express for blazing fast API endpoints.</li>
-              <li><strong>Design System:</strong> A custom, premium light theme tailored for data visualization.</li>
+              <li><strong>Frontend:</strong> Astro, React, and Emotion.</li>
+              <li><strong>Backend:</strong> Node.js and Express.</li>
+              <li><strong>Design System:</strong> A custom, premium light theme.</li>
             </ul>
           </InfoCard>
         </Grid>
@@ -137,9 +150,7 @@ const About = (): JSX.Element => {
           <Heading as="h2" size="large" align="center" color={colors.primary}>
             Ready to dive in?
           </Heading>
-          <p style={{ marginBottom: '2rem', color: colors.textColor }}>
-            Start discovering hidden insights about any website instantly.
-          </p>
+          <p>Start discovering hidden insights about any website instantly.</p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
             <Link to="/check">
               <Button size="large">Start Scanning</Button>
@@ -151,7 +162,7 @@ const About = (): JSX.Element => {
         </CTASection>
       </AboutContainer>
       <Footer />
-    </div>
+    </PageWrapper>
   );
 };
 
