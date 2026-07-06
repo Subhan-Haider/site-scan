@@ -19,25 +19,25 @@ const ssl: Analyzer = (d) => {
     out.push({
       severity: 'critical',
       title: 'SSL certificate expired',
-      detail: `Expired ${-days} day(s) ago`,
+      detail: `The certificate expired ${-days} day(s) ago`,
     });
   } else if (days <= 7) {
     out.push({
       severity: 'critical',
       title: 'SSL certificate expiring within a week',
-      detail: `Expires in ${days} day(s), renew immediately`,
+      detail: `The domain expires in ${days} day(s) and needs to be renewed immediately`,
     });
   } else if (days <= 14) {
     out.push({
       severity: 'issue',
       title: 'SSL certificate expiring soon',
-      detail: `Expires in ${days} day(s), schedule renewal`,
+      detail: `The certificate expires in ${days} day(s), remember to renew it soon`,
     });
   } else if (days <= 30) {
     out.push({
       severity: 'warning',
       title: 'SSL certificate renews within a month',
-      detail: `Expires in ${days} day(s)`,
+      detail: `The domain expires in ${days} day(s)`,
     });
   }
   return out;

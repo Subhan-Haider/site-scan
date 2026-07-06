@@ -16,11 +16,9 @@ import ProgressBar, {
   type LoadingState,
 } from 'client/components/misc/ProgressBar';
 import ActionButtons from 'client/components/misc/ActionButtons';
-import AdditionalResources from 'client/components/misc/AdditionalResources';
 import AdvisoryPanel from 'client/components/misc/AdvisoryPanel';
 import NoResults from 'client/components/misc/NoResults';
 import ResultsMasonryGrid from 'client/components/misc/ResultsMasonryGrid';
-import ViewRaw from 'client/components/misc/ViewRaw';
 
 import { determineAddressType, type AddressType } from 'client/utils/address-type-checker';
 import { hasData } from 'client/utils/result-processor';
@@ -212,14 +210,7 @@ const Results = (props: { address?: string }): JSX.Element => {
           ))}
         </ResultsMasonryGrid>
       </ResultsContent>
-      <ViewRaw
-        everything={renderable.map((r) => ({
-          id: r.card.id,
-          title: r.card.title,
-          result: r.data,
-        }))}
-      />
-      <AdditionalResources url={address} />
+
 
       <Modal isOpen={modalOpen} closeModal={() => setModalOpen(false)}>
         {modalContent}

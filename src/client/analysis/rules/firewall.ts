@@ -9,7 +9,7 @@ const firewall: Analyzer = (d) => {
     {
       severity: 'warning',
       title: 'No web application firewall detected',
-      detail: 'Consider Cloudflare, AWS WAF or similar to filter malicious traffic',
+      detail: 'Consider using a firewall (like Cloudflare or AWS) to block malicious traffic',
     },
   ];
 };

@@ -10,7 +10,7 @@ const whois: Analyzer = (d) => {
       {
         severity: 'critical',
         title: 'Domain registration expired',
-        detail: `Expired ${-days} day(s) ago, renew before it drops`,
+        detail: `The certificate expired ${-days} day(s) ago, renew before it drops`,
       },
     ];
   }
@@ -19,7 +19,7 @@ const whois: Analyzer = (d) => {
       {
         severity: 'critical',
         title: 'Domain expires within a week',
-        detail: `Expires in ${days} day(s), renew immediately`,
+        detail: `The domain expires in ${days} day(s) and needs to be renewed immediately`,
       },
     ];
   }
@@ -28,7 +28,7 @@ const whois: Analyzer = (d) => {
       {
         severity: 'warning',
         title: 'Domain expires within a month',
-        detail: `Expires in ${days} day(s)`,
+        detail: `The domain expires in ${days} day(s)`,
       },
     ];
   }

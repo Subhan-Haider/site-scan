@@ -36,7 +36,7 @@ const tlsSecurityAudit: Analyzer = (d) => {
     {
       severity,
       title: `SSL Labs grade ${worstGrade}`,
-      detail: 'Review cipher suites, protocol versions and key strength',
+      detail: "Consider reviewing your server's security settings to improve your score",
     },
   ];
 };

@@ -7,7 +7,7 @@ const threats: Analyzer = (d) => {
     out.push({
       severity: 'critical',
       title: 'Listed by Google Safe Browsing',
-      detail: 'Site flagged for malware, phishing or unwanted software',
+      detail: 'This site was flagged for malware, phishing, or other unwanted software',
     });
   }
   if (Array.isArray(d.urlHaus?.urls) && d.urlHaus.urls.length) {

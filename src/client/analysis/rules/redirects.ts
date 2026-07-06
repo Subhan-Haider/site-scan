@@ -13,7 +13,7 @@ const redirects: Analyzer = (d) => {
     out.push({
       severity: 'warning',
       title: `Long redirect chain: ${hops} hops`,
-      detail: 'Collapse intermediate redirects to reduce latency',
+      detail: 'You have too many redirects, which slows down your site',
     });
   } else if (hops > 0) {
     out.push({ severity: 'info', title: `${hops} redirect hop(s)` });
@@ -27,7 +27,7 @@ const redirects: Analyzer = (d) => {
     out.push({
       severity: 'critical',
       title: 'Site does not enforce HTTPS',
-      detail: 'Add a permanent redirect from http:// to https://',
+      detail: 'Make sure to automatically redirect visitors to the secure https:// version of your site',
     });
   }
 

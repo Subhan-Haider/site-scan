@@ -23,7 +23,8 @@ if (trustProxy) {
   app.set('trust proxy', parsed);
 }
 
-const __filename = new URL(import.meta.url).pathname;
+import { fileURLToPath, pathToFileURL } from 'url';
+const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const port = process.env.PORT || 3000; // The port to run the server on
@@ -80,7 +81,8 @@ fs.readdirSync(dirPath, { withFileTypes: true })
     const route = `${API_DIR}/${routeName}`;
     // const handler = require(path.join(dirPath, dirent.name));
 
-    const handlerModule = await import(path.join(dirPath, dirent.name));
+    const fileUrl = pathToFileURL(path.join(dirPath, dirent.name)).href;
+    const handlerModule = await import(fileUrl);
     const handler = handlerModule.default || handlerModule;
     handlers[route] = handler;
 
@@ -207,10 +209,11 @@ app.use((req, res, next) => {
 const printMessage = () => {
   console.log(
     `\x1b[36m\n` +
-      '    __      __   _         ___ _           _   \n' +
-      '    \\ \\    / /__| |__ ___ / __| |_  ___ __| |__\n' +
-      "     \\ \\/\\/ / -_) '_ \\___| (__| ' \\/ -_) _| / /\n" +
-      '      \\_/\\_/\\___|_.__/    \\___|_||_\\___\\__|_\\_\\\n' +
+      '      ____  _ _       ____                  \n' +
+      '     / ___|(_) |_ ___/ ___|  ___ __ _ _ __  \n' +
+      '     \\___ \\| | __/ _ \\___ \\ / __/ _` | \'_ \\ \n' +
+      '      ___) | | ||  __/___) | (_| (_| | | | |\n' +
+      '     |____/|_|\\__\\___|____/ \\___\\__,_|_| |_|\n' +
       `\x1b[0m\n`,
     `\x1b[1m\x1b[32m🚀 SiteScan is up and running at http://localhost:${port} \x1b[0m\n\n`,
     `\x1b[2m\x1b[36m🛟 For documentation and support, visit the GitHub repo: https://github.com/Subhan-Haider/site-scan \x1b[0m\n`

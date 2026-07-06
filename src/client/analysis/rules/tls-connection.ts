@@ -9,7 +9,7 @@ const tlsConnection: Analyzer = (d) => {
     out.push({
       severity: 'critical',
       title: `Outdated TLS protocol negotiated: ${protocol}`,
-      detail: 'Disable TLS 1.0 and 1.1 on the server',
+      detail: 'You should disable older, insecure TLS versions like 1.0 and 1.1',
     });
   } else if (protocol === 'TLSv1.2') {
     out.push({ severity: 'info', title: 'TLS 1.2 in use, consider enabling TLS 1.3' });
@@ -21,7 +21,7 @@ const tlsConnection: Analyzer = (d) => {
     out.push({
       severity: 'warning',
       title: 'No forward secrecy in negotiated cipher',
-      detail: 'Prefer ECDHE or DHE cipher suites',
+      detail: 'Consider updating your server to prefer stronger encryption methods',
     });
   }
 
@@ -29,7 +29,7 @@ const tlsConnection: Analyzer = (d) => {
     out.push({
       severity: 'info',
       title: 'OCSP stapling not enabled',
-      detail: 'Enable OCSP stapling to speed up cert revocation checks',
+      detail: 'Consider enabling OCSP stapling to slightly speed up secure connections',
     });
   }
 

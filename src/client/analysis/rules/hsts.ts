@@ -9,7 +9,7 @@ const hsts: Analyzer = (d) => {
       {
         severity: 'issue',
         title: 'No HSTS header',
-        detail: 'Add Strict-Transport-Security to enforce HTTPS for clients',
+        detail: 'Missing a setting that forces browsers to use a secure connection (HSTS)',
       },
     ];
   }
@@ -20,21 +20,21 @@ const hsts: Analyzer = (d) => {
     out.push({
       severity: 'warning',
       title: `HSTS max-age below ${MIN_MAX_AGE}`,
-      detail: `Current max-age is ${maxAge}, raise it for preload eligibility`,
+      detail: `The max-age is too short (${maxAge}), make it longer for better security`,
     });
   }
   if (!header.includes('includesubdomains')) {
     out.push({
       severity: 'warning',
       title: 'HSTS missing includeSubDomains',
-      detail: 'Add includeSubDomains to protect every subdomain',
+      detail: 'Missing the includeSubDomains setting, which protects your other subdomains',
     });
   }
   if (!header.includes('preload')) {
     out.push({
       severity: 'info',
       title: 'HSTS missing preload directive',
-      detail: 'Add preload to qualify for the HSTS preload list',
+      detail: 'Consider adding the preload setting for extra security',
     });
   }
   if (d.compatible) out.push({ severity: 'pass', title: 'HSTS preload compatible' });

@@ -1,0 +1,245 @@
+{
+  "block-lists.ts": {
+    "titles": [
+      "Not on any tested DNS blocklist",
+      "Blocked by ${blocked.length} DNS resolver(s)"
+    ],
+    "details": [
+      "Listed by ${names}"
+    ]
+  },
+  "cookies.ts": {
+    "titles": [
+      "Cookie ",
+      "Cookie ",
+      "Cookie ",
+      "All cookies use Secure/HttpOnly/SameSite"
+    ],
+    "details": []
+  },
+  "dnssec.ts": {
+    "titles": [
+      "DNSSEC enabled",
+      "DNSSEC not enabled"
+    ],
+    "details": [
+      "Sign DNS records to prevent spoofing and cache poisoning"
+    ]
+  },
+  "firewall.ts": {
+    "titles": [
+      "WAF detected: ${d.waf || ",
+      "No web application firewall detected"
+    ],
+    "details": [
+      "Consider Cloudflare, AWS WAF or similar to filter malicious traffic"
+    ]
+  },
+  "headers.ts": {
+    "titles": [
+      "Server discloses ${key}"
+    ],
+    "details": [
+      "Value: ${String(val).slice(0, 80)}"
+    ]
+  },
+  "hsts.ts": {
+    "titles": [
+      "No HSTS header",
+      "HSTS max-age below ${MIN_MAX_AGE}",
+      "HSTS missing includeSubDomains",
+      "HSTS missing preload directive",
+      "HSTS preload compatible"
+    ],
+    "details": [
+      "Add Strict-Transport-Security to enforce HTTPS for clients",
+      "Current max-age is ${maxAge}, raise it for preload eligibility",
+      "Add includeSubDomains to protect every subdomain",
+      "Add preload to qualify for the HSTS preload list"
+    ]
+  },
+  "http-security.ts": {
+    "titles": [
+      "${label} set",
+      "Missing ${label}",
+      "Missing ${label}"
+    ],
+    "details": [
+      "Set the ${label} response header",
+      "Consider adding the ${label} response header"
+    ]
+  },
+  "mail-config.ts": {
+    "titles": [
+      "No SPF record found",
+      "SPF policy permits unauthorised senders",
+      "SPF record published",
+      "No DMARC record found",
+      "DMARC policy: reject",
+      "DMARC policy: quarantine",
+      "DMARC policy is monitor-only",
+      "No DKIM record discovered on common selectors",
+      "DKIM key found"
+    ],
+    "details": [
+      "Publish v=spf1 to authorise legitimate mail senders",
+      "Tighten the SPF policy to ~all or -all",
+      "Publish v=DMARC1 on _dmarc subdomain to prevent spoofing",
+      "Move from p=none to p=quarantine or p=reject when ready",
+      "Publish a DKIM key so receivers can verify message signatures"
+    ]
+  },
+  "ports.ts": {
+    "titles": [
+      "Port ${port} open: ${known[1]}"
+    ],
+    "details": [
+      "Close it or restrict access by firewall if not required"
+    ]
+  },
+  "quality.ts": {
+    "titles": [
+      "${label} score: ${pct}"
+    ],
+    "details": []
+  },
+  "redirects.ts": {
+    "titles": [
+      "Long redirect chain: ${hops} hops",
+      "${hops} redirect hop(s)",
+      "HTTP requests are redirected to HTTPS",
+      "Site does not enforce HTTPS"
+    ],
+    "details": [
+      "Collapse intermediate redirects to reduce latency",
+      "Add a permanent redirect from http:// to https://"
+    ]
+  },
+  "robots-txt.ts": {
+    "titles": [
+      "robots.txt blocks every crawler from the entire site"
+    ],
+    "details": [
+      "Confirm this is intentional, otherwise search engines will not index the site"
+    ]
+  },
+  "security-txt.ts": {
+    "titles": [
+      "No security.txt published",
+      "security.txt found",
+      "security.txt not PGP signed"
+    ],
+    "details": [
+      "Add /.well-known/security.txt with disclosure contact info",
+      "Sign the file to let researchers verify authenticity"
+    ]
+  },
+  "server-info.ts": {
+    "titles": [
+      "Shodan reports ${d.vulns.length} CVE(s) on this host"
+    ],
+    "details": [
+      "${cves}${more}. Patch affected services or block at the firewall"
+    ]
+  },
+  "social-tags.ts": {
+    "titles": [
+      "Social share metadata complete",
+      "Missing social tags: ${missing.length}"
+    ],
+    "details": [
+      "Add ${missing.join("
+    ]
+  },
+  "ssl.ts": {
+    "titles": [
+      "SSL certificate invalid",
+      "SSL certificate valid",
+      "SSL certificate expired",
+      "SSL certificate expiring within a week",
+      "SSL certificate expiring soon",
+      "SSL certificate renews within a month"
+    ],
+    "details": [
+      "Expired ${-days} day(s) ago",
+      "Expires in ${days} day(s), renew immediately",
+      "Expires in ${days} day(s), schedule renewal",
+      "Expires in ${days} day(s)"
+    ]
+  },
+  "status.ts": {
+    "titles": [
+      "Site responded with ${code}",
+      "Slow response time: ${Math.round(t)}ms",
+      "Response time over ${SLOW_MS}ms"
+    ],
+    "details": [
+      "Investigate server performance, caching or CDN coverage"
+    ]
+  },
+  "threats.ts": {
+    "titles": [
+      "Listed by Google Safe Browsing",
+      "Listed on URLhaus malware feed",
+      "Listed on PhishTank",
+      "Cloudmersive flagged this site as unsafe",
+      "No threat feed matches"
+    ],
+    "details": [
+      "Site flagged for malware, phishing or unwanted software"
+    ]
+  },
+  "tls-client-compat.ts": {
+    "titles": [
+      "${fails.length} simulated client(s) cannot connect"
+    ],
+    "details": [
+      "${sample}${more}. Drop legacy ciphers/protocols only after weighing reach"
+    ]
+  },
+  "tls-connection.ts": {
+    "titles": [
+      "Outdated TLS protocol negotiated: ${protocol}",
+      "TLS 1.2 in use, consider enabling TLS 1.3",
+      "TLS 1.3 negotiated",
+      "No forward secrecy in negotiated cipher",
+      "OCSP stapling not enabled",
+      "HTTP/2 negotiated via ALPN"
+    ],
+    "details": [
+      "Disable TLS 1.0 and 1.1 on the server",
+      "Prefer ECDHE or DHE cipher suites",
+      "Enable OCSP stapling to speed up cert revocation checks"
+    ]
+  },
+  "tls-security-audit.ts": {
+    "titles": [
+      "SSL Labs grade ${worstGrade}",
+      "SSL Labs grade ${worstGrade}"
+    ],
+    "details": [
+      "Review cipher suites, protocol versions and key strength"
+    ]
+  },
+  "txt-records.ts": {
+    "titles": [
+      "Root SPF record is overly permissive"
+    ],
+    "details": [
+      "Replace +all/?all with ~all or -all to reject spoofed mail"
+    ]
+  },
+  "whois.ts": {
+    "titles": [
+      "Domain registration expired",
+      "Domain expires within a week",
+      "Domain expires within a month",
+      "Domain registration is valid"
+    ],
+    "details": [
+      "Expired ${-days} day(s) ago, renew before it drops",
+      "Expires in ${days} day(s), renew immediately",
+      "Expires in ${days} day(s)"
+    ]
+  }
+}

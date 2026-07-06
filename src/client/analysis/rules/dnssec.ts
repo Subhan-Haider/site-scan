@@ -11,7 +11,7 @@ const dnssec: Analyzer = (d) => {
     {
       severity: 'warning',
       title: 'DNSSEC not enabled',
-      detail: 'Sign DNS records to prevent spoofing and cache poisoning',
+      detail: 'Enable DNSSEC to prevent attackers from sending visitors to a fake version of your site',
     },
   ];
 };

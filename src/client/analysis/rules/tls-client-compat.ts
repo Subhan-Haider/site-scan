@@ -30,7 +30,7 @@ const tlsClientCompat: Analyzer = (d) => {
     {
       severity: 'warning',
       title: `${fails.length} simulated client(s) cannot connect`,
-      detail: `${sample}${more}. Drop legacy ciphers/protocols only after weighing reach`,
+      detail: `${sample}${more}. These older clients won't be able to connect to your site`,
     },
   ];
 };

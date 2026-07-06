@@ -7,7 +7,7 @@ const securityTxt: Analyzer = (d) => {
       {
         severity: 'warning',
         title: 'No security.txt published',
-        detail: 'Add /.well-known/security.txt with disclosure contact info',
+        detail: 'Consider adding a security.txt file so researchers can report issues to you securely',
       },
     ];
   }
@@ -16,7 +16,7 @@ const securityTxt: Analyzer = (d) => {
     out.push({
       severity: 'info',
       title: 'security.txt not PGP signed',
-      detail: 'Sign the file to let researchers verify authenticity',
+      detail: "Consider digitally signing your security.txt file to prove it's authentic",
     });
   }
   return out;

@@ -9,7 +9,7 @@ import { StyledCard } from 'client/components/Form/Card';
 import Footer from 'client/components/misc/Footer';
 import FancyBackground from 'client/components/misc/FancyBackground';
 
-import docs from 'client/utils/docs';
+
 import colors from 'client/styles/colors';
 import { determineAddressType, normalizeAddress } from 'client/utils/address-type-checker';
 
@@ -170,8 +170,8 @@ const Home = (): JSX.Element => {
       <UserInputMain onSubmit={formSubmitEvent}>
         <a href="/">
           <Heading as="h1" size="xLarge" align="center" color={colors.primary}>
-            <img width="64" src="/site-scan.png" alt="Web Check Icon" />
-            Web Check
+            <img width="64" src="/site-scan.png" alt="SiteScan Icon" />
+            SiteScan
           </Heading>
         </a>
         <Input
@@ -193,49 +193,7 @@ const Home = (): JSX.Element => {
         </Button>
       </UserInputMain>
 
-      <SiteFeaturesWrapper>
-        <div className="features">
-          <Heading as="h2" size="small" color={colors.primary}>
-            Supported Checks
-          </Heading>
-          <ul>
-            {docs.map((doc, index) => (
-              <li key={index}>
-                <Link to={`/check/about#${makeAnchor(doc.title)}`} title={doc.title}>
-                  {doc.title}
-                </Link>
-              </li>
-            ))}
-            <li>
-              <Link to="/check/about">+ more!</Link>
-            </li>
-          </ul>
-        </div>
-        <div className="links">
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/Subhan-Haider/site-scan"
-            title="Check out the source code and documentation on GitHub, and get support or contribute"
-          >
-            <Button>View on GitHub</Button>
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://app.netlify.com/start/deploy?repository=https://github.com/Subhan-Haider/site-scan"
-            title="Deploy your own private or public instance of SiteScan to Netlify"
-          >
-            <Button>Deploy your own</Button>
-          </a>
-          <Link
-            to="/check/about#api-documentation"
-            title="View the API documentation, to use SiteScan programmatically"
-          >
-            <Button>API Docs</Button>
-          </Link>
-        </div>
-      </SiteFeaturesWrapper>
+
       <Footer isFixed={true} />
     </HomeContainer>
   );

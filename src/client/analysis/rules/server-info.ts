@@ -11,7 +11,7 @@ const serverInfo: Analyzer = (d) => {
     {
       severity: 'critical',
       title: `Shodan reports ${d.vulns.length} CVE(s) on this host`,
-      detail: `${cves}${more}. Patch affected services or block at the firewall`,
+      detail: `${cves}${more}. Make sure to update your server software to fix these vulnerabilities`,
     },
   ];
 };

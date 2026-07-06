@@ -21,13 +21,13 @@ const mailConfig: Analyzer = (d) => {
     out.push({
       severity: 'issue',
       title: 'No SPF record found',
-      detail: 'Publish v=spf1 to authorise legitimate mail senders',
+      detail: 'Add an SPF record so emails from your domain are trusted',
     });
   } else if (/[+?]all\b/i.test(spf)) {
     out.push({
       severity: 'warning',
       title: 'SPF policy permits unauthorised senders',
-      detail: 'Tighten the SPF policy to ~all or -all',
+      detail: 'Update your SPF policy to block unauthorized senders',
     });
   } else {
     out.push({ severity: 'pass', title: 'SPF record published' });
@@ -38,7 +38,7 @@ const mailConfig: Analyzer = (d) => {
     out.push({
       severity: 'issue',
       title: 'No DMARC record found',
-      detail: 'Publish v=DMARC1 on _dmarc subdomain to prevent spoofing',
+      detail: 'Add a DMARC record to prevent email spoofing',
     });
   } else {
     const policy = dmarc.match(/p=(\w+)/i)?.[1]?.toLowerCase();
@@ -49,7 +49,7 @@ const mailConfig: Analyzer = (d) => {
       out.push({
         severity: 'warning',
         title: 'DMARC policy is monitor-only',
-        detail: 'Move from p=none to p=quarantine or p=reject when ready',
+        detail: 'Update your DMARC policy to reject or quarantine bad emails',
       });
     }
   }
@@ -60,7 +60,7 @@ const mailConfig: Analyzer = (d) => {
     out.push({
       severity: 'warning',
       title: 'No DKIM record discovered on common selectors',
-      detail: 'Publish a DKIM key so receivers can verify message signatures',
+      detail: 'Add a DKIM record so email receivers can verify your messages',
     });
   } else {
     out.push({ severity: 'pass', title: 'DKIM key found' });

@@ -25,7 +25,7 @@ const httpSecurity: Analyzer = (d) => {
         : {
             severity: 'issue',
             title: `Missing ${label}`,
-            detail: `Set the ${label} response header`,
+            detail: `Consider adding the ${label} setting to improve security`,
           },
     );
   }
@@ -34,7 +34,7 @@ const httpSecurity: Analyzer = (d) => {
       out.push({
         severity: 'warning',
         title: `Missing ${label}`,
-        detail: `Consider adding the ${label} response header`,
+        detail: `Consider adding the ${label} setting to improve security`,
       });
     }
   }

@@ -7,33 +7,34 @@ body {
   font-family: var(--font-mono);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #141517;
-  color: #fff;
+  background: #f5f5f5;
+  color: #1a1a1a;
 }
 
 code {
   font-family: var(--font-mono);
 }
 #fancy-background {
-  color: var(--background, #141517);
+  color: var(--background, #f5f5f5);
 }
 
 ::selection {
-  background: var(--primary, #d6fb41);
-  color: var(--background, #141517);
+  background: var(--primary, #4a7700);
+  color: #ffffff;
 }
 
 svg.rsm-svg {
-  background: #141517;
+  background: #e8e8e8;
   border-radius: 6px;
 }
 
 :root {
-  --toastify-color-dark: #111927 !important;
-  --toastify-color-info: #04e4f4 !important;
-  --toastify-color-success: #20e253 !important;
-  --toastify-color-warning: #f6f000 !important;
-  --toastify-color-error: #f80363 !important;
+  --toastify-color-dark: #f0f0f0 !important;
+  --toastify-text-color-dark: #1a1a1a !important;
+  --toastify-color-info: #0099bb !important;
+  --toastify-color-success: #1a9e3c !important;
+  --toastify-color-warning: #e6a800 !important;
+  --toastify-color-error: #c0003a !important;
 }
 
 #fancy-background {

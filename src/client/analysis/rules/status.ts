@@ -16,7 +16,7 @@ const status: Analyzer = (d) => {
       out.push({
         severity: 'warning',
         title: `Slow response time: ${Math.round(t)}ms`,
-        detail: 'Investigate server performance, caching or CDN coverage',
+        detail: 'Your site is responding slowly. You might want to look into performance improvements',
       });
     } else if (t >= SLOW_MS) {
       out.push({ severity: 'info', title: `Response time over ${SLOW_MS}ms` });

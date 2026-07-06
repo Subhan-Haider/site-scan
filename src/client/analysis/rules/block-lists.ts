@@ -11,7 +11,7 @@ const blockLists: Analyzer = (d) => {
     {
       severity,
       title: `Blocked by ${blocked.length} DNS resolver(s)`,
-      detail: `Listed by ${names}`,
+      detail: `This site was flagged on these blocklists: ${names}`,
     },
   ];
 };

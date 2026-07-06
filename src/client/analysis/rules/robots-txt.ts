@@ -19,7 +19,7 @@ const robotsTxt: Analyzer = (d) => {
       {
         severity: 'warning',
         title: 'robots.txt blocks every crawler from the entire site',
-        detail: 'Confirm this is intentional, otherwise search engines will not index the site',
+        detail: "Make sure this is intentional, as search engines won't show your site in results",
       },
     ];
   }

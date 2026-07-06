@@ -12,7 +12,7 @@ const txtRecords: Analyzer = (d) => {
       {
         severity: 'warning',
         title: 'Root SPF record is overly permissive',
-        detail: 'Replace +all/?all with ~all or -all to reject spoofed mail',
+        detail: 'Update your SPF record to block unauthorized email senders',
       },
     ];
   }

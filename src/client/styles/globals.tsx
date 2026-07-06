@@ -18,7 +18,7 @@ const GlobalStyles = () => (
       button,
       section {
         font-family: var(--font-mono);
-        color: #fff;
+        color: #1a1a1a;
       }
       #fancy-background p span {
         color: transparent;

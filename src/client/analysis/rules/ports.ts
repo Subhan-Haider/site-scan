@@ -23,7 +23,7 @@ const ports: Analyzer = (d) => {
       out.push({
         severity: known[0],
         title: `Port ${port} open: ${known[1]}`,
-        detail: 'Close it or restrict access by firewall if not required',
+        detail: "Consider closing this port if you aren't using it to improve security",
       });
     }
   }
