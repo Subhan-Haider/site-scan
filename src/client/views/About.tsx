@@ -109,17 +109,7 @@ const Section = styled(StyledCard)`
   }
 `;
 
-const SponsorshipContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-  align-items: center;
-  line-height: 1.5rem;
-  img {
-    border-radius: 4px;
-  }
-`;
+
 
 const makeAnchor = (title: string): string =>
   title
@@ -161,43 +151,7 @@ const About = (): JSX.Element => {
           {about.map((para, index: number) => (
             <p key={index}>{para}</p>
           ))}
-          <hr />
-          <SponsorshipContainer>
-            <p>
-              SiteScan is kindly sponsored by{' '}
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://terminaltrove.com/?utm_campaign=github&utm_medium=referral&utm_content=site-scan&utm_source=wcgh"
-              >
-                Terminal Trove
-              </a>
-              <br />
-              The $HOME of all things in the terminal.
-              <br />
-              <small>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://terminaltrove.com/newsletter?utm_campaign=github&utm_medium=referral&utm_content=site-scan&utm_source=wcgh"
-                >
-                  Find your next CLI / TUI tool, and get updates to your inbox
-                </a>
-              </small>
-            </p>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://terminaltrove.com/?utm_campaign=github&utm_medium=referral&utm_content=site-scan&utm_source=wcgh"
-            >
-              <img
-                width="300"
-                alt="Terminal Trove"
-                src="https://i.ibb.co/T1KzVmR/terminal-trove-green.png"
-              />
-            </a>
-          </SponsorshipContainer>
-          <hr />
+
           <p>
             SiteScan is developed and maintained by{' '}
             <a target="_blank" rel="noreferrer" href="https://aliciasykes.com">
@@ -217,12 +171,7 @@ const About = (): JSX.Element => {
             Source code and self-hosting docs are available on{' '}
             <a target="_blank" rel="noreferrer" href="https://github.com/Subhan-Haider/site-scan">
               GitHub
-            </a>
-            . If you've found this service useful, consider{' '}
-            <a target="_blank" rel="noreferrer" href="https://github.com/sponsors/Subhan-Haider">
-              sponsoring me
-            </a>{' '}
-            from $1/month, to help with the ongoing hosting and development costs.
+            .
           </p>
         </Section>
 
