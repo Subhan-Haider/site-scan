@@ -1,1 +1,1 @@
-![Screenshot](https://raw.githubusercontent.com/Lissy93/web-check/HEAD/.github/screenshots/web-check-screenshot3.png)
+![Screenshot](https://raw.githubusercontent.com/Lissy93/site-scan/HEAD/.github/screenshots/site-scan-screenshot3.png)

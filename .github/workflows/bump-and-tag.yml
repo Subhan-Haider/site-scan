@@ -178,7 +178,7 @@ jobs:
           fi
 
           {
-            printf 'Web-Check v%s 🚀\n\n' "$VERSION"
+            printf 'SiteScan v%s 🚀\n\n' "$VERSION"
             if [ -n "$PR_NUMBER" ]; then
               printf 'PR: #%s - %s\n' "$PR_NUMBER" "$PR_TITLE"
             else

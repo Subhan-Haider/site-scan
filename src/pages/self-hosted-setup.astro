@@ -9,7 +9,7 @@ const cardData = [
     title: 'Deploy with Docker',
     description:
       "Just one command, and you'll have your own Web Check instance running on your server in minutes.",
-    command: 'docker run -p 3000:3000 lissy93/web-check',
+    command: 'docker run -p 3000:3000 lissy93/site-scan',
   },
   {
     title: '1-Click Deploy',
@@ -21,17 +21,17 @@ const cardData = [
         image: '/assets/images/vercel.svg',
         link:
           'https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.' +
-          'com%2Fxray-web%2Fweb-check-free&project-name=web-check-free&repository' +
-          '-name=web-check-free&demo-title=Web%20Check&demo-description=Try%20ou' +
-          't%20the%20live%20demo&demo-url=https%3A%2F%2Fweb-check.xyz%2F&demo-ima' +
-          'ge=https%3A%2F%2Fi.ibb.co%2Fr0jXN6s%2Fweb-check.png',
+          'com%2Fxray-web%2Fsite-scan-free&project-name=site-scan-free&repository' +
+          '-name=site-scan-free&demo-title=Web%20Check&demo-description=Try%20ou' +
+          't%20the%20live%20demo&demo-url=https%3A%2F%2Fsite-scan.xyz%2F&demo-ima' +
+          'ge=https%3A%2F%2Fi.ibb.co%2Fr0jXN6s%2Fsite-scan.png',
       },
       {
         name: 'Netlify',
         image: '/assets/images/netlify.svg',
         link:
           'https://app.netlify.com/start/deploy?repository=' +
-          'https://github.com/xray-web/web-check-free',
+          'https://github.com/xray-web/site-scan-free',
       },
     ],
   },
@@ -53,7 +53,7 @@ const cardData = [
   title="Self-Hosted Setup | Web Check"
   description="Get started with running Web Check locally or on your own server."
 >
-  <div class="web-check-page">
+  <div class="site-scan-page">
     <NavBar />
     <main>
       <h1>Self-Hosted Setup</h1>
@@ -95,7 +95,7 @@ const cardData = [
 
 <style lang="scss">
   @use '@styles/global.scss' as *;
-  .web-check-page {
+  .site-scan-page {
     padding-top: 2rem;
     margin: 0 auto;
     min-height: 100vh;

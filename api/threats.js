@@ -47,7 +47,7 @@ const phishTank = async (url) => {
   try {
     const encoded = Buffer.from(url).toString('base64');
     const res = await httpPost(`https://checkurl.phishtank.com/checkurl/?url=${encoded}`, null, {
-      headers: { 'User-Agent': 'phishtank/web-check' },
+      headers: { 'User-Agent': 'phishtank/site-scan' },
       timeout: 3000,
     });
     const parsed = await xml2js.parseStringPromise(res.data, { explicitArray: false });

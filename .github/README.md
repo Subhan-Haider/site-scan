@@ -1,10 +1,10 @@
-<h1 align="center">Web-Check</h1>
+<h1 align="center">SiteScan</h1>
 
 <p align="center">
-<img src="https://cdn.as93.net/logo/web-check/w256" width="96" /><br />
+<img src="https://cdn.as93.net/logo/site-scan/w256" width="96" /><br />
 <b><i>Comprehensive, on-demand open source intelligence for any website</i></b>
 <br />
-<b>🌐 <a href="https://web-check.xyz/">web-check.xyz</a></b><br />
+<b>🌐 <a href="https://site-scan.xyz/">site-scan.xyz</a></b><br />
 
 </p>
 
@@ -16,14 +16,14 @@
 <table align="center">
   <tr>
     <td align="center" width="33%">
-      <a href="https://terminaltrove.com/?utm_campaign=github&utm_medium=referral&utm_content=web-check&utm_source=wcgh">
+      <a href="https://terminaltrove.com/?utm_campaign=github&utm_medium=referral&utm_content=site-scan&utm_source=wcgh">
         <img src="https://pixelflare.cc/alicia/sponsors/terminal-trove.png" width="260" alt="Terminal Trove"><br>
         <b>Terminal Trove</b>
       </a><br>
       <sub>The $HOME of all things in the terminal</sub>
     </td>
     <td align="center" width="33%">
-      <a href="https://go.warp.dev/web-check">
+      <a href="https://go.warp.dev/site-scan">
         <img src="https://github.com/warpdotdev/brand-assets/blob/main/Github/Sponsor/Warp-Github-LG-02.png?raw=true" width="260" alt="Warp"><br>
         <b>Warp</b>
       </a><br>
@@ -68,29 +68,29 @@ The aim is to help you easily understand, optimize and secure your website.
 <details>
       <summary>Expand Screenshot</summary>
 
-[![Screenshot](https://raw.githubusercontent.com/Lissy93/web-check/master/.github/screenshots/web-check-screenshot1.png)](https://web-check.as93.net/)
+[![Screenshot](https://raw.githubusercontent.com/Lissy93/site-scan/master/.github/screenshots/site-scan-screenshot1.png)](https://site-scan.as93.net/)
 
 </details>
 
-[![Screenshot](https://i.ibb.co/r0jXN6s/web-check.png)](https://github.com/Lissy93/web-check/tree/master/.github/screenshots)
+[![Screenshot](https://i.ibb.co/r0jXN6s/site-scan.png)](https://github.com/Lissy93/site-scan/tree/master/.github/screenshots)
 
 ### Live Demo
 
-A hosted version can be accessed at: **[web-check.as93.net](https://web-check.as93.net)**
+A hosted version can be accessed at: **[site-scan.as93.net](https://site-scan.as93.net)**
 
 ### Mirror
 
-The source for this repo is mirrored to CodeBerg, available at: **[codeberg.org/alicia/web-check](https://codeberg.org/alicia/web-check)**
+The source for this repo is mirrored to CodeBerg, available at: **[codeberg.org/alicia/site-scan](https://codeberg.org/alicia/site-scan)**
 
 ### Status
 
-Build & Deploys: [![Netlify Status](https://api.netlify.com/api/v1/badges/c43453c1-5333-4df7-889b-c1d2b52183c0/deploy-status)](https://app.netlify.com/sites/web-check/deploys)
-[![Vercel Status](https://therealsujitk-vercel-badge.vercel.app/?app=web-check-ten)](https://vercel.com/as93/web-check/)
-[![🐳 Build + Publish Docker Image](https://github.com/Lissy93/web-check/actions/workflows/docker.yml/badge.svg)](https://github.com/Lissy93/web-check/actions/workflows/docker.yml)
-[![🚀 Deploy to AWS](https://github.com/Lissy93/web-check/actions/workflows/deploy-aws.yml/badge.svg)](https://github.com/Lissy93/web-check/actions/workflows/deploy-aws.yml)
+Build & Deploys: [![Netlify Status](https://api.netlify.com/api/v1/badges/c43453c1-5333-4df7-889b-c1d2b52183c0/deploy-status)](https://app.netlify.com/sites/site-scan/deploys)
+[![Vercel Status](https://therealsujitk-vercel-badge.vercel.app/?app=site-scan-ten)](https://vercel.com/as93/site-scan/)
+[![🐳 Build + Publish Docker Image](https://github.com/Lissy93/site-scan/actions/workflows/docker.yml/badge.svg)](https://github.com/Lissy93/site-scan/actions/workflows/docker.yml)
+[![🚀 Deploy to AWS](https://github.com/Lissy93/site-scan/actions/workflows/deploy-aws.yml/badge.svg)](https://github.com/Lissy93/site-scan/actions/workflows/deploy-aws.yml)
 <br />
-Repo Management & Miscellaneous: [![🪞 Mirror to Codeberg](https://github.com/Lissy93/web-check/actions/workflows/mirror.yml/badge.svg)](https://github.com/Lissy93/web-check/actions/workflows/mirror.yml)
-[![💓 Inserts Contributors & Sponsors](https://github.com/Lissy93/web-check/actions/workflows/credits.yml/badge.svg)](https://github.com/Lissy93/web-check/actions/workflows/credits.yml)
+Repo Management & Miscellaneous: [![🪞 Mirror to Codeberg](https://github.com/Lissy93/site-scan/actions/workflows/mirror.yml/badge.svg)](https://github.com/Lissy93/site-scan/actions/workflows/mirror.yml)
+[![💓 Inserts Contributors & Sponsors](https://github.com/Lissy93/site-scan/actions/workflows/credits.yml/badge.svg)](https://github.com/Lissy93/site-scan/actions/workflows/credits.yml)
 
 ### Features
 
@@ -123,7 +123,7 @@ Finding the IP of a given server is the first step to conducting further investi
 <details>
 <summary><b>SSL Chain</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-ssl" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-ssl" align="right" />
 
 ###### Description
 
@@ -144,7 +144,7 @@ SSL certificates not only provide the assurance that data transmission to and fr
 <details>
 <summary><b>DNS Records</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-dns" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-dns" align="right" />
 
 ###### Description
 
@@ -165,7 +165,7 @@ Extracting DNS records can provide a wealth of information in an OSINT investiga
 <details>
 <summary><b>Cookies</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-cookies" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-cookies" align="right" />
 
 ###### Description
 
@@ -186,7 +186,7 @@ Cookies can disclose information about how the website tracks and interacts with
 <details>
 <summary><b>Crawl Rules</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-robots" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-robots" align="right" />
 
 ###### Description
 
@@ -207,7 +207,7 @@ It's often useful to check the robots.txt file during an investigation, as it ca
 <details>
 <summary><b>Headers</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-headers" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-headers" align="right" />
 
 ###### Description
 
@@ -228,7 +228,7 @@ Analyzing HTTP headers can provide significant insights in an OSINT investigatio
 <details>
 <summary><b>Quality Metrics</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-quality" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-quality" align="right" />
 
 ###### Description
 
@@ -251,7 +251,7 @@ Useful for assessing a site's technical health, SEO issues, identify vulnerabili
 <details>
 <summary><b>Server Location</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-location" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-location" align="right" />
 
 ###### Description
 
@@ -270,7 +270,7 @@ Knowing the server location is a good first step in better understanding a websi
 <details>
 <summary><b>Associated Hosts</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-hosts" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-hosts" align="right" />
 
 ###### Description
 
@@ -291,7 +291,7 @@ During an investigation, understanding the full scope of a target's web presence
 <details>
 <summary><b>Redirect Chain</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-redirects" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-redirects" align="right" />
 
 ###### Description
 
@@ -311,7 +311,7 @@ Understanding the redirect chain can be useful for several reasons. From a secur
 <details>
 <summary><b>TXT Records</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-txt-records" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-txt-records" align="right" />
 
 ###### Description
 
@@ -332,7 +332,7 @@ The TXT records often reveal which external services and technologies are being 
 <details>
 <summary><b>Server Status</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-status" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-status" align="right" />
 
 ###### Description
 
@@ -346,7 +346,7 @@ Checks if a server is online and responding to requests.
 <details>
 <summary><b>Open Ports</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-ports" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-ports" align="right" />
 
 ###### Description
 
@@ -365,7 +365,7 @@ Knowing which ports are open on a server can provide information about the servi
 <details>
 <summary><b>Traceroute</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-trace-route" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-trace-route" align="right" />
 
 ###### Description
 
@@ -386,7 +386,7 @@ In OSINT investigations, traceroute can provide insights about the routing paths
 <details>
 <summary><b>Carbon Footprint</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-carbon" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-carbon" align="right" />
 
 ###### Description
 
@@ -408,7 +408,7 @@ From an OSINT perspective, understanding a website's carbon footprint doesn't di
 <details>
 <summary><b>Server Info</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-server" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-server" align="right" />
 
 ###### Description
 
@@ -429,7 +429,7 @@ In an OSINT context, server information can provide valuable clues about the org
 <details>
 <summary><b>Whois Lookup</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-domain" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-domain" align="right" />
 
 ###### Description
 
@@ -449,7 +449,7 @@ In an OSINT context, Whois records can provide valuable clues about the entity b
 <details>
 <summary><b>Domain Info</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-domain" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-domain" align="right" />
 
 ###### Description
 
@@ -469,7 +469,7 @@ In an OSINT context, Whois records can provide valuable clues about the entity b
 <details>
 <summary><b>DNS Security Extensions</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-dnssec" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-dnssec" align="right" />
 
 ###### Description
 
@@ -492,7 +492,7 @@ DNSSEC information provides insight into an organization's level of cybersecurit
 <details>
 <summary><b>Site Features</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-features" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-features" align="right" />
 
 ###### Description
 
@@ -508,7 +508,7 @@ This is useful to understand what a site is capable of, and what technologies to
 <details>
 <summary><b>HTTP Strict Transport Security</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-hsts" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-hsts" align="right" />
 
 ###### Description
 
@@ -531,7 +531,7 @@ HSTS does not allow a user to override the invalid certificate message
 <details>
 <summary><b>DNS Server</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-dns-servers" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-dns-servers" align="right" />
 
 ###### Description
 
@@ -545,7 +545,7 @@ This check determines the DNS server(s) that the requested URL / IP resolves to.
 <details>
 <summary><b>Tech Stack</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-tech" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-tech" align="right" />
 
 ###### Description
 
@@ -564,7 +564,7 @@ Identifying a website's tech stack aids in evaluating its security by exposing p
 <details>
 <summary><b>Listed Pages</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-pages" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-pages" align="right" />
 
 ###### Description
 
@@ -584,7 +584,7 @@ Understand the structure of a site's public-facing content, and for site-owners,
 <details>
 <summary><b>Security.txt</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-securitytxt" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-securitytxt" align="right" />
 
 ###### Description
 
@@ -607,7 +607,7 @@ This is important, as without a defined point of contact a security researcher m
 <details>
 <summary><b>Linked Pages</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-links" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-links" align="right" />
 
 ###### Description
 
@@ -625,7 +625,7 @@ For site owners, this is useful for diagnosing SEO issues, improving the site st
 <details>
 <summary><b>Social Tags</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-social" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-social" align="right" />
 
 ###### Description
 
@@ -648,7 +648,7 @@ Adding this data to your site will boost SEO, and as an OSINT researcher it can 
 <details>
 <summary><b>Email Configuration</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-email" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-email" align="right" />
 
 ###### Description
 
@@ -672,7 +672,7 @@ This information is helpful for researchers as it helps assess a domain's email 
 <details>
 <summary><b>Firewall Detection</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-firewall" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-firewall" align="right" />
 
 ###### Description
 
@@ -693,7 +693,7 @@ It's useful to understand if a site is using a WAF, and which firewall software 
 <details>
 <summary><b>HTTP Security Features</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-http" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-http" align="right" />
 
 ###### Description
 
@@ -721,7 +721,7 @@ Reviewing security headers is important, as it offers insights into a site's def
 <details>
 <summary><b>Archive History</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-history" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-history" align="right" />
 
 ###### Description
 
@@ -739,7 +739,7 @@ This is useful for understanding the history of a site, and how it has changed o
 <details>
 <summary><b>Global Ranking</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-rank" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-rank" align="right" />
 
 ###### Description
 
@@ -758,7 +758,7 @@ Knowing a websites overall global rank can be useful for understanding the scale
 <details>
 <summary><b>Block Detection</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-blocks" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-blocks" align="right" />
 
 ###### Description
 
@@ -772,7 +772,7 @@ Checks access to the URL using 10+ of the most popular privacy, malware and pare
 <details>
 <summary><b>Malware & Phishing Detection</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-threats" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-threats" align="right" />
 
 ###### Description
 
@@ -791,7 +791,7 @@ Knowing if a site is listed as a threat by any of these services can be useful f
 <details>
 <summary><b>TLS Cipher Suites</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-tls-cipher" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-tls-cipher" align="right" />
 
 ###### Description
 
@@ -810,7 +810,7 @@ This is important info to test for from a security perspective. Because a cipher
 <details>
 <summary><b>TLS Security Config</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-tls-sec" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-tls-sec" align="right" />
 
 ###### Description
 
@@ -826,7 +826,7 @@ Understanding issues with a site's TLS configuration will help you address poten
 <details>
 <summary><b>TLS Handshake Simulation</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-tls-handshake" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-tls-handshake" align="right" />
 
 ###### Description
 
@@ -843,7 +843,7 @@ This simulates how different clients (browsers, operating systems) would perform
 <details>
 <summary><b>Screenshot</b></summary>
 
-<img width="300" src="https://pixelflare.cc/alicia/web-check/wc-screenshot" align="right" />
+<img width="300" src="https://pixelflare.cc/alicia/site-scan/wc-screenshot" align="right" />
 
 ###### Description
 
@@ -857,7 +857,7 @@ This may be useful to see what a given website looks like, free of the constrain
 
 </details>
 
-Read more here: **[web-check.xyz/about](https://web-check.xyz/about)**
+Read more here: **[site-scan.xyz/about](https://site-scan.xyz/about)**
 
 ---
 
@@ -869,26 +869,26 @@ Read more here: **[web-check.xyz/about](https://web-check.xyz/about)**
 
 Click the button below, to deploy to Netlify 👇
 
-[![Deploy to Netlify](https://img.shields.io/badge/Deploy-Netlify-%2330c8c9?style=for-the-badge&logo=netlify&labelColor=1e0e41 "Deploy Web-Check to Netlify, via 1-Click Script")](https://app.netlify.com/start/deploy?repository=https://github.com/lissy93/web-check)
+[![Deploy to Netlify](https://img.shields.io/badge/Deploy-Netlify-%2330c8c9?style=for-the-badge&logo=netlify&labelColor=1e0e41 "Deploy SiteScan to Netlify, via 1-Click Script")](https://app.netlify.com/start/deploy?repository=https://github.com/lissy93/site-scan)
 
 ### Deploying - Option #2: Vercel
 
 Click the button below, to deploy to Vercel 👇
 
-[![Deploy with Vercel](https://img.shields.io/badge/Deploy-Vercel-%23ffffff?style=for-the-badge&logo=vercel&labelColor=1e0e41)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Flissy93%2Fweb-check&project-name=web-check&repository-name=web-check-fork&demo-title=Web-Check%20Demo&demo-description=Check%20out%20web-check.xyz%20to%20see%20a%20live%20demo%20of%20this%20application%20running.&demo-url=https%3A%2F%2Fweb-check.xyz&demo-image=https%3A%2F%2Fraw.githubusercontent.com%2FLissy93%2Fweb-check%2Fmaster%2F.github%2Fscreenshots%2Fweb-check-screenshot10.png)
+[![Deploy with Vercel](https://img.shields.io/badge/Deploy-Vercel-%23ffffff?style=for-the-badge&logo=vercel&labelColor=1e0e41)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Flissy93%2Fsite-scan&project-name=site-scan&repository-name=site-scan-fork&demo-title=SiteScan%20Demo&demo-description=Check%20out%20site-scan.xyz%20to%20see%20a%20live%20demo%20of%20this%20application%20running.&demo-url=https%3A%2F%2Fsite-scan.xyz&demo-image=https%3A%2F%2Fraw.githubusercontent.com%2FLissy93%2Fsite-scan%2Fmaster%2F.github%2Fscreenshots%2Fsite-scan-screenshot10.png)
 
 ### Deploying - Option #3: Docker
 
-Run `docker run -p 3000:3000 lissy93/web-check`, then open [`localhost:3000`](http://localhost:3000)
+Run `docker run -p 3000:3000 lissy93/site-scan`, then open [`localhost:3000`](http://localhost:3000)
 
 <details>
 <summary>Docker Options</summary>
 
 You can get the Docker image from:
 
-- DockerHub: [`lissy93/web-check`](https://hub.docker.com/r/lissy93/web-check)
-- GHCR: [`ghcr.io/lissy93/web-check`](https://github.com/Lissy93/web-check/pkgs/container/web-check)
-- Or build the image yourself by cloning the repo and running `docker build -t web-check .`
+- DockerHub: [`lissy93/site-scan`](https://hub.docker.com/r/lissy93/site-scan)
+- GHCR: [`ghcr.io/lissy93/site-scan`](https://github.com/Lissy93/site-scan/pkgs/container/site-scan)
+- Or build the image yourself by cloning the repo and running `docker build -t site-scan .`
 
 </details>
 
@@ -897,8 +897,8 @@ You can get the Docker image from:
 Install the prerequisites listed in the [Developing](#developing) section, then run:
 
 ```bash
-git clone https://github.com/Lissy93/web-check.git  # Download the code from GitHub
-cd web-check                                        # Navigate into the project dir
+git clone https://github.com/Lissy93/site-scan.git  # Download the code from GitHub
+cd site-scan                                        # Navigate into the project dir
 yarn install                                        # Install the NPM dependencies
 yarn build                                          # Build the app for production
 yarn serve                                          # Start the app (API and GUI)
@@ -958,8 +958,8 @@ Note that keys that are prefixed with `REACT_APP_` are used client-side, and as 
 
 ### Developing
 
-1. Clone the repo, `git clone git@github.com:Lissy93/web-check.git`
-2. Cd into it, `cd web-check`
+1. Clone the repo, `git clone git@github.com:Lissy93/site-scan.git`
+2. Cd into it, `cd site-scan`
 3. Install dependencies: `yarn`
 4. Start the dev server, with `yarn dev`
 
@@ -977,14 +977,14 @@ For Code of Conduct, see [Contributor Convent](https://www.contributor-covenant.
 
 To get started, fork the repo, make your changes, add, commit and push the code, then come back here to open a pull request. If you're new to GitHub or open source, [this guide](https://www.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github-3#let-s-make-our-first-pull-request-) or the [git docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) may help you get started, but feel free to reach out if you need any support.
 
-[![Submit a PR](https://img.shields.io/badge/Submit_a_PR-GitHub-%23060606?style=for-the-badge&logo=github&logoColor=fff)](https://github.com/Lissy93/web-check/compare)
+[![Submit a PR](https://img.shields.io/badge/Submit_a_PR-GitHub-%23060606?style=for-the-badge&logo=github&logoColor=fff)](https://github.com/Lissy93/site-scan/compare)
 
 ### Reporting Bugs
 
 If you've found something that doesn't work as it should, or would like to suggest a new feature, then go ahead and raise a ticket on GitHub.
 For bugs, please outline the steps needed to reproduce, and include relevant info like system info and resulting logs.
 
-[![Raise an Issue](https://img.shields.io/badge/Raise_an_Issue-GitHub-%23060606?style=for-the-badge&logo=github&logoColor=fff)](https://github.com/Lissy93/web-check/issues/new/choose)
+[![Raise an Issue](https://img.shields.io/badge/Raise_an_Issue-GitHub-%23060606?style=for-the-badge&logo=github&logoColor=fff)](https://github.com/Lissy93/site-scan/issues/new/choose)
 
 ### Supporting
 
@@ -997,13 +997,13 @@ It's thanks to the support of the community that this project is able to be free
 
 ### Contributors
 
-Credit to the following users for contributing to Web-Check
+Credit to the following users for contributing to SiteScan
 
-[![contributors badge](https://readme-contribs.as93.net/contributors/lissy93/web-check?perRow=10&shape=squircle)](https://github.com/lissy93/web-check/graphs/contributors)
+[![contributors badge](https://readme-contribs.as93.net/contributors/lissy93/site-scan?perRow=10&shape=squircle)](https://github.com/lissy93/site-scan/graphs/contributors)
 
 ### Sponsors
 
-Huge thanks to these wonderful people, who sponsor me on GitHub, their support helps cover the costs required to keep Web-Check and my other projects free for everyone. Consider joining them, by [sponsoring me on GitHub](https://github.com/sponsors/Lissy93) if you're able.
+Huge thanks to these wonderful people, who sponsor me on GitHub, their support helps cover the costs required to keep SiteScan and my other projects free for everyone. Consider joining them, by [sponsoring me on GitHub](https://github.com/sponsors/Lissy93) if you're able.
 
 [![sponsors badge](https://readme-contribs.as93.net/sponsors/lissy93?perRow=10&shape=squircle)](https://github.com/sponsors/lissy93)
 
@@ -1011,7 +1011,7 @@ Huge thanks to these wonderful people, who sponsor me on GitHub, their support h
 
 ## License
 
-> _**[Lissy93/Web-Check](https://github.com/Lissy93/web-check)** is licensed under [MIT](https://github.com/Lissy93/web-check/blob/HEAD/LICENSE) © [Alicia Sykes](https://aliciasykes.com) 2023 - 2026._<br>
+> _**[Lissy93/SiteScan](https://github.com/Lissy93/site-scan)** is licensed under [MIT](https://github.com/Lissy93/site-scan/blob/HEAD/LICENSE) © [Jane Doe](https://aliciasykes.com) 2023 - 2026._<br>
 > <sup align="right">For information, see <a href="https://tldrlegal.com/license/mit-license">TLDR Legal > MIT</a></sup>
 
 <details>
@@ -1019,7 +1019,7 @@ Huge thanks to these wonderful people, who sponsor me on GitHub, their support h
 
 ```
 The MIT License (MIT)
-Copyright (c) Alicia Sykes <alicia@omg.com>
+Copyright (c) Jane Doe <alicia@omg.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -1039,13 +1039,13 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
 
-[![View Dependency Licenses & SBOM on FOSSA](https://app.fossa.com/api/projects/git%2Bgithub.com%2FLissy93%2Fweb-check.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2FLissy93%2Fweb-check?ref=badge_large&issueType=license)
+[![View Dependency Licenses & SBOM on FOSSA](https://app.fossa.com/api/projects/git%2Bgithub.com%2FLissy93%2Fsite-scan.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2FLissy93%2Fsite-scan?ref=badge_large&issueType=license)
 
 </details>
 
 <!-- License + Copyright -->
 <p  align="center">
-  <i>© <a href="https://aliciasykes.com">Alicia Sykes</a> 2026</i><br>
+  <i>© <a href="https://aliciasykes.com">Jane Doe</a> 2026</i><br>
   <i>Licensed under <a href="https://gist.github.com/Lissy93/143d2ee01ccc5c052a17">MIT</a></i><br>
   <a href="https://github.com/lissy93"><img src="https://pixelflare.cc/alicia/images/octoface.webp?w=64" /></a><br>
   <sup>Thanks for visiting :)</sup>

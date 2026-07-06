@@ -1,8 +1,8 @@
 {
-  "name": "web-check",
+  "name": "site-scan",
   "type": "module",
   "version": "2.1.9",
-  "homepage": "https://web-check.xyz",
+  "homepage": "https://site-scan.xyz",
   "engines": {
     "node": ">=22"
   },

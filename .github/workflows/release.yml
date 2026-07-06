@@ -85,7 +85,7 @@ jobs:
         env:
           TAG: ${{ steps.tag.outputs.tag }}
         run: |
-          STAGING="web-check-${TAG}"
+          STAGING="site-scan-${TAG}"
           rm -rf "$STAGING"
           mkdir -p "$STAGING"
           cp -r dist api public "$STAGING/"
@@ -107,7 +107,7 @@ jobs:
         uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ steps.tag.outputs.tag }}
-          name: Web-Check v${{ steps.tag.outputs.tag }}
+          name: SiteScan v${{ steps.tag.outputs.tag }}
           draft: true
           prerelease: false
           generate_release_notes: true
@@ -141,7 +141,7 @@ jobs:
               else
                 echo "| Draft release | ✅ [View releases](${REPO_URL}/releases) |"
               fi
-              echo "| Artifacts | \`web-check-${TAG}.tar.gz\`, \`web-check-${TAG}.zip\` |"
+              echo "| Artifacts | \`site-scan-${TAG}.tar.gz\`, \`site-scan-${TAG}.zip\` |"
             else
               echo "| Draft release | ❌ Failed (outcome: ${RELEASE_OUTCOME:-unknown}) |"
             fi

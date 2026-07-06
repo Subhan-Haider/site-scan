@@ -148,7 +148,7 @@ const About = (): JSX.Element => {
       <AboutContainer>
         <Nav>
           <HeaderLinkContainer>
-            <a target="_blank" rel="noreferrer" href="https://github.com/lissy93/web-check">
+            <a target="_blank" rel="noreferrer" href="https://github.com/lissy93/site-scan">
               <Button>View on GitHub</Button>
             </a>
           </HeaderLinkContainer>
@@ -164,11 +164,11 @@ const About = (): JSX.Element => {
           <hr />
           <SponsorshipContainer>
             <p>
-              Web-Check is kindly sponsored by{' '}
+              SiteScan is kindly sponsored by{' '}
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://terminaltrove.com/?utm_campaign=github&utm_medium=referral&utm_content=web-check&utm_source=wcgh"
+                href="https://terminaltrove.com/?utm_campaign=github&utm_medium=referral&utm_content=site-scan&utm_source=wcgh"
               >
                 Terminal Trove
               </a>
@@ -179,7 +179,7 @@ const About = (): JSX.Element => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://terminaltrove.com/newsletter?utm_campaign=github&utm_medium=referral&utm_content=web-check&utm_source=wcgh"
+                  href="https://terminaltrove.com/newsletter?utm_campaign=github&utm_medium=referral&utm_content=site-scan&utm_source=wcgh"
                 >
                   Find your next CLI / TUI tool, and get updates to your inbox
                 </a>
@@ -188,7 +188,7 @@ const About = (): JSX.Element => {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://terminaltrove.com/?utm_campaign=github&utm_medium=referral&utm_content=web-check&utm_source=wcgh"
+              href="https://terminaltrove.com/?utm_campaign=github&utm_medium=referral&utm_content=site-scan&utm_source=wcgh"
             >
               <img
                 width="300"
@@ -199,15 +199,15 @@ const About = (): JSX.Element => {
           </SponsorshipContainer>
           <hr />
           <p>
-            Web-Check is developed and maintained by{' '}
+            SiteScan is developed and maintained by{' '}
             <a target="_blank" rel="noreferrer" href="https://aliciasykes.com">
-              Alicia Sykes
+              Jane Doe
             </a>
             . It's licensed under the{' '}
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/Lissy93/web-check/blob/master/LICENSE"
+              href="https://github.com/Lissy93/site-scan/blob/master/LICENSE"
             >
               MIT license
             </a>
@@ -215,7 +215,7 @@ const About = (): JSX.Element => {
             settings.
             <br />
             Source code and self-hosting docs are available on{' '}
-            <a target="_blank" rel="noreferrer" href="https://github.com/lissy93/web-check">
+            <a target="_blank" rel="noreferrer" href="https://github.com/lissy93/site-scan">
               GitHub
             </a>
             . If you've found this service useful, consider{' '}
@@ -314,7 +314,7 @@ const About = (): JSX.Element => {
           Deploy your own Instance
         </Heading>
         <Section>
-          <p>Web-Check is designed to be easily self-hosted.</p>
+          <p>SiteScan is designed to be easily self-hosted.</p>
           <Heading as="h3" size="small" color={colors.primary}>
             Option #1 - Netlify
           </Heading>
@@ -322,7 +322,7 @@ const About = (): JSX.Element => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://app.netlify.com/start/deploy?repository=https://github.com/lissy93/web-check"
+            href="https://app.netlify.com/start/deploy?repository=https://github.com/lissy93/site-scan"
           >
             <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />
           </a>
@@ -334,7 +334,7 @@ const About = (): JSX.Element => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Flissy93%2Fweb-check&project-name=web-check&repository-name=web-check-fork&demo-title=Web-Check%20Demo&demo-description=Check%20out%20web-check.xyz%20to%20see%20a%20live%20demo%20of%20this%20application%20running.&demo-url=https%3A%2F%2Fweb-check.xyz&demo-image=https%3A%2F%2Fraw.githubusercontent.com%2FLissy93%2Fweb-check%2Fmaster%2F.github%2Fscreenshots%2Fweb-check-screenshot10.png"
+            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Flissy93%2Fsite-scan&project-name=site-scan&repository-name=site-scan-fork&demo-title=SiteScan%20Demo&demo-description=Check%20out%20site-scan.xyz%20to%20see%20a%20live%20demo%20of%20this%20application%20running.&demo-url=https%3A%2F%2Fsite-scan.xyz&demo-image=https%3A%2F%2Fraw.githubusercontent.com%2FLissy93%2Fsite-scan%2Fmaster%2F.github%2Fscreenshots%2Fsite-scan-screenshot10.png"
           >
             <img src="https://vercel.com/button" alt="Deploy with Vercel" />
           </a>
@@ -344,21 +344,21 @@ const About = (): JSX.Element => {
           </Heading>
           <p>
             A Docker container is published to{' '}
-            <a target="_blank" rel="noreferrer" href="https://hub.docker.com/r/lissy93/web-check">
+            <a target="_blank" rel="noreferrer" href="https://hub.docker.com/r/lissy93/site-scan">
               DockerHub
             </a>
             <br />
             Run this command, then open <code>localhost:3000</code>
-            <pre>docker run -p 3000:3000 lissy93/web-check</pre>
+            <pre>docker run -p 3000:3000 lissy93/site-scan</pre>
           </p>
 
           <Heading as="h3" size="small" color={colors.primary}>
             Option #4 - Manual
           </Heading>
           <pre>
-            git clone https://github.com/Lissy93/web-check.git
+            git clone https://github.com/Lissy93/site-scan.git
             <br />
-            cd web-check # Move into the project directory
+            cd site-scan # Move into the project directory
             <br />
             yarn install # Install dependencies
             <br />
@@ -374,8 +374,8 @@ const About = (): JSX.Element => {
           <p>
             More detailed installation and setup instructions can be found in the GitHub repository
             -{' '}
-            <a target="_blank" rel="noreferrer" href="https://github.com/lissy93/web-check#readme">
-              github.com/lissy93/web-check
+            <a target="_blank" rel="noreferrer" href="https://github.com/lissy93/site-scan#readme">
+              github.com/lissy93/site-scan
             </a>
           </p>
 
@@ -384,7 +384,7 @@ const About = (): JSX.Element => {
           </Heading>
           <p>
             There are some optional environmental variables you can specify to give you access to
-            some additional Web-Checks. See the README for full list of options.
+            some additional SiteScans. See the README for full list of options.
           </p>
 
           <ul>
@@ -445,12 +445,12 @@ const About = (): JSX.Element => {
             License
           </Heading>
           <b>
-            <a target="_blank" rel="noreferrer" href="https://github.com/lissy93/web-check">
-              Web-Check
+            <a target="_blank" rel="noreferrer" href="https://github.com/lissy93/site-scan">
+              SiteScan
             </a>{' '}
             is distributed under the MIT license, ©{' '}
             <a target="_blank" rel="noreferrer" href="https://aliciasykes.com">
-              Alicia Sykes
+              Jane Doe
             </a>{' '}
             {new Date().getFullYear()}
           </b>

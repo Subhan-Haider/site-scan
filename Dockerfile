@@ -60,12 +60,12 @@ ENV CHROME_PATH='/usr/bin/chromium' \
     PUPPETEER_EXECUTABLE_PATH='/usr/bin/chromium' \
     PUPPETEER_SKIP_DOWNLOAD='true'
 
-LABEL org.opencontainers.image.title="Web-Check" \
-      org.opencontainers.image.description="All-in-one OSINT tool for analysing any website" \
-      org.opencontainers.image.url="https://web-check.xyz" \
-      org.opencontainers.image.source="https://github.com/lissy93/web-check" \
+LABEL org.opencontainers.image.title="SiteScan" \
+      org.opencontainers.image.description="A custom tool for analysing websites" \
+      org.opencontainers.image.url="https://site-scan.xyz" \
+      org.opencontainers.image.source="https://github.com/lissy93/site-scan" \
       org.opencontainers.image.licenses="MIT" \
-      org.opencontainers.image.vendor="Alicia Sykes"
+      org.opencontainers.image.vendor="Jane Doe"
 
 # Define the command executed when the container starts and start the server.js of the Node.js application
 CMD ["yarn", "start"]

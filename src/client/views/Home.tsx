@@ -186,7 +186,7 @@ const Home = (): JSX.Element => {
       <UserInputMain onSubmit={formSubmitEvent}>
         <a href="/">
           <Heading as="h1" size="xLarge" align="center" color={colors.primary}>
-            <img width="64" src="/web-check.png" alt="Web Check Icon" />
+            <img width="64" src="/site-scan.png" alt="Web Check Icon" />
             Web Check
           </Heading>
         </a>
@@ -243,7 +243,7 @@ const Home = (): JSX.Element => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/lissy93/web-check"
+            href="https://github.com/lissy93/site-scan"
             title="Check out the source code and documentation on GitHub, and get support or contribute"
           >
             <Button>View on GitHub</Button>
@@ -251,14 +251,14 @@ const Home = (): JSX.Element => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://app.netlify.com/start/deploy?repository=https://github.com/lissy93/web-check"
-            title="Deploy your own private or public instance of Web-Check to Netlify"
+            href="https://app.netlify.com/start/deploy?repository=https://github.com/lissy93/site-scan"
+            title="Deploy your own private or public instance of SiteScan to Netlify"
           >
             <Button>Deploy your own</Button>
           </a>
           <Link
             to="/check/about#api-documentation"
-            title="View the API documentation, to use Web-Check programmatically"
+            title="View the API documentation, to use SiteScan programmatically"
           >
             <Button>API Docs</Button>
           </Link>

@@ -1,4 +1,4 @@
-app = 'web-check'
+app = 'site-scan'
 primary_region = 'lhr'
 
 [build]

@@ -124,12 +124,12 @@ jobs:
         uses: actions/checkout@v6
 
       - name: 🐳 Build Docker Image
-        run: docker build -t web-check:test .
+        run: docker build -t site-scan:test .
         timeout-minutes: 10
 
       - name: 🧪 Verify Container Starts
         run: |
-          docker run -d --name wc-test -p 3000:3000 web-check:test
+          docker run -d --name wc-test -p 3000:3000 site-scan:test
           sleep 5
           STATUS=$(docker inspect -f '{{.State.Running}}' wc-test)
           if [ "$STATUS" != "true" ]; then

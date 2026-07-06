@@ -26,7 +26,7 @@ const deployTarget = unwrapEnvVar('PLATFORM', 'node').toLowerCase();
 const output = unwrapEnvVar('OUTPUT', 'static');
 
 // The FQDN of where the site is hosted (used for sitemaps & canonical URLs)
-const site = unwrapEnvVar('SITE_URL', 'https://web-check.xyz');
+const site = unwrapEnvVar('SITE_URL', 'https://site-scan.xyz');
 
 // The base URL of the site (if serving from a subdirectory)
 const base = unwrapEnvVar('BASE_URL', '/');
@@ -60,8 +60,8 @@ console.log(
   `\x1b[35m\x1b[2mCompiling for "${deployTarget}" using "${output}" mode, ` +
     `to deploy to "${site}" at "${base}"\x1b[0m\n`,
   `\x1b[2m\x1b[36m🛟 For documentation and support, visit the GitHub repo: ` +
-    `https://github.com/lissy93/web-check \n`,
-  `💖 Found Web-Check useful? Consider sponsoring us on GitHub ` +
+    `https://github.com/lissy93/site-scan \n`,
+  `💖 Found SiteScan useful? Consider sponsoring us on GitHub ` +
     `to help fund maintenance & development.\x1b[0m\n`,
 );
 

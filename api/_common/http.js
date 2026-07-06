@@ -63,7 +63,7 @@ const wrapNetworkError = (error) => {
 
 export const UA =
   'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) ' +
-  'Chrome/120.0.0.0 Safari/537.36 (compatible; web-check/1.0; +https://web-check.xyz)';
+  'Chrome/120.0.0.0 Safari/537.36 (compatible; site-scan/1.0; +https://site-scan.xyz)';
 
 const send = async (method, url, body, opts = {}) => {
   const finalUrl = appendParams(url, opts.params);

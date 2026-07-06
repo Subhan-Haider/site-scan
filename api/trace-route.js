@@ -39,7 +39,7 @@ const traceRouteHandler = async (url) => {
       return {
         skipped:
           'Traceroute is not installed in this environment. ' +
-          'Install via your package manager, or run web-check via Docker.',
+          'Install via your package manager, or run site-scan via Docker.',
       };
     }
     return { error: `Traceroute failed: ${err.message}` };

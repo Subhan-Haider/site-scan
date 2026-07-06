@@ -39,7 +39,7 @@ const docs: Doc[] = [
       { title: 'RFC-8446 - TLS', link: 'https://tools.ietf.org/html/rfc8446' },
       { title: 'SSL Checker', link: 'https://www.sslshopper.com/ssl-checker.html' },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-ssl',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-ssl',
   },
   {
     id: 'dns',
@@ -56,7 +56,7 @@ const docs: Doc[] = [
       { title: 'RFC-1035 - DNS', link: 'https://tools.ietf.org/html/rfc1035' },
       { title: 'DNS Lookup (via MxToolbox)', link: 'https://mxtoolbox.com/DNSLookup.aspx' },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-dns',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-dns',
   },
   {
     id: 'cookies',
@@ -79,7 +79,7 @@ const docs: Doc[] = [
       },
       { title: 'RFC-6265 - Coolies', link: 'https://tools.ietf.org/html/rfc6265' },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-cookies',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-cookies',
   },
   {
     id: 'robots-txt',
@@ -105,7 +105,7 @@ const docs: Doc[] = [
         link: 'https://en.wikipedia.org/wiki/Robots_exclusion_standard',
       },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-robots',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-robots',
   },
   {
     id: 'headers',
@@ -131,7 +131,7 @@ const docs: Doc[] = [
         link: 'https://owasp.org/www-project-secure-headers/',
       },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-headers',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-headers',
   },
   {
     id: 'quality',
@@ -147,7 +147,7 @@ const docs: Doc[] = [
       { title: 'SEO Checker', link: 'https://www.seobility.net/en/seocheck/' },
       { title: 'PWA Builder', link: 'https://www.pwabuilder.com/' },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-quality',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-quality',
   },
   {
     id: 'location',
@@ -162,7 +162,7 @@ const docs: Doc[] = [
         link: 'https://en.wikipedia.org/wiki/Internet_geolocation',
       },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-location',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-location',
   },
   {
     id: 'hosts',
@@ -179,7 +179,7 @@ const docs: Doc[] = [
       { title: 'DNS Enumeration - DNS Dumpster', link: 'https://dnsdumpster.com/' },
       { title: 'Subdomain Finder', link: 'https://subdomainfinder.c99.nl/' },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-hosts',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-hosts',
   },
   {
     id: 'redirects',
@@ -195,7 +195,7 @@ const docs: Doc[] = [
       { title: 'URL Redirection - Wiki', link: 'https://en.wikipedia.org/wiki/URL_redirection' },
       { title: '301 Redirects explained', link: 'https://ahrefs.com/blog/301-redirects/' },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-redirects',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-redirects',
   },
   {
     id: 'txt-records',
@@ -212,7 +212,7 @@ const docs: Doc[] = [
       { title: 'RFC-1464 - TXT Records', link: 'https://datatracker.ietf.org/doc/html/rfc1464' },
       { title: 'TXT Record Lookup (via MxToolbox)', link: 'https://mxtoolbox.com/TXTLookup.aspx' },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-txt-records',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-txt-records',
   },
   {
     id: 'status',
@@ -220,7 +220,7 @@ const docs: Doc[] = [
     description: 'Checks if a server is online and responding to requests.',
     use: '',
     resources: [],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-status',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-status',
   },
   {
     id: 'ports',
@@ -238,7 +238,7 @@ const docs: Doc[] = [
         link: 'https://nmap.org/book/man-port-scanning-basics.html',
       },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-ports',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-ports',
   },
   {
     id: 'trace-route',
@@ -252,7 +252,7 @@ const docs: Doc[] = [
       'https://en.wikipedia.org/wiki/Traceroute',
       'https://www.ripe.net/publications/docs/ripe-611',
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-trace-route',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-trace-route',
   },
   {
     id: 'carbon',
@@ -270,7 +270,7 @@ const docs: Doc[] = [
         link: 'https://www.wired.co.uk/article/internet-carbon-footprint',
       },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-carbon',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-carbon',
   },
   {
     id: 'server-info',
@@ -284,7 +284,7 @@ const docs: Doc[] = [
       'https://tools.ietf.org/html/rfc7231#section-7.4.2',
       'https://builtwith.com/',
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-server',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-server',
   },
   {
     id: 'domain',
@@ -297,7 +297,7 @@ const docs: Doc[] = [
       'https://www.icann.org/resources/pages/whois-2018-01-17-en',
       'https://whois.domaintools.com/',
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-domain',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-domain',
   },
   {
     id: 'whois',
@@ -310,7 +310,7 @@ const docs: Doc[] = [
       'https://www.icann.org/resources/pages/whois-2018-01-17-en',
       'https://whois.domaintools.com/',
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-domain',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-domain',
   },
   {
     id: 'dnssec',
@@ -326,7 +326,7 @@ const docs: Doc[] = [
       'https://support.google.com/domains/answer/6147083',
       'https://www.internetsociety.org/resources/deploy360/2013/dnssec-test-sites/',
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-dnssec',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-dnssec',
   },
   {
     id: 'hsts',
@@ -349,7 +349,7 @@ const docs: Doc[] = [
       'https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html',
       'https://hstspreload.org/',
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-hsts',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-hsts',
   },
   {
     id: 'dns-server',
@@ -358,7 +358,7 @@ const docs: Doc[] = [
       "This check determines the DNS server(s) that the requested URL / IP resolves to. Also fires off a rudimentary check to see if the DNS server supports DoH, and weather it's vulnerable to DNS cache poisoning.",
     use: '',
     resources: [],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-dns-servers',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-dns-servers',
   },
   {
     id: 'tech-stack',
@@ -377,7 +377,7 @@ const docs: Doc[] = [
       },
       { title: 'BuiltWith - Check what tech a site is using', link: 'https://builtwith.com/' },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-tech',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-tech',
   },
   {
     id: 'sitemap',
@@ -393,7 +393,7 @@ const docs: Doc[] = [
       { title: 'Sitemap XML spec', link: 'https://www.sitemaps.org/protocol.html' },
       { title: 'Sitemap tutorial', link: 'https://www.conductor.com/academy/xml-sitemap/' },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-pages',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-pages',
   },
   {
     id: 'security-txt',
@@ -421,7 +421,7 @@ const docs: Doc[] = [
         link: 'https://pieterbakker.com/implementing-security-txt/',
       },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-securitytxt',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-securitytxt',
   },
   {
     id: 'linked-pages',
@@ -433,7 +433,7 @@ const docs: Doc[] = [
       "From a security standpoint, the outbound links can help identify any potential malicious or compromised sites the website is unknowingly linking to. Analyzing internal links can aid in understanding the site's structure and potentially uncover hidden or vulnerable pages which are not intended to be public. " +
       'And for an OSINT investigator, it can aid in building a comprehensive understanding of the target, uncovering related entities, resources, or even potential hidden parts of the site.',
     resources: [{ title: 'W3C Link Checker', link: 'https://validator.w3.org/checklink' }],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-links',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-links',
   },
   {
     id: 'social-tags',
@@ -458,7 +458,7 @@ const docs: Doc[] = [
         link: 'https://developers.facebook.com/docs/sharing/webmasters',
       },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-social',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-social',
   },
   {
     id: 'mail-config',
@@ -481,7 +481,7 @@ const docs: Doc[] = [
       { title: 'RFC-7489 - DMARC', link: 'https://datatracker.ietf.org/doc/html/rfc7489' },
       { title: 'BIMI Group', link: 'https://bimigroup.org/' },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-email',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-email',
   },
   {
     id: 'firewall',
@@ -504,7 +504,7 @@ const docs: Doc[] = [
       },
       { title: 'WAF - Wiki', link: 'https://en.wikipedia.org/wiki/Web_application_firewall' },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-firewall',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-firewall',
   },
   {
     id: 'http-security',
@@ -547,7 +547,7 @@ const docs: Doc[] = [
         link: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection',
       },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-http',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-http',
   },
   {
     id: 'archives',
@@ -555,7 +555,7 @@ const docs: Doc[] = [
     description: 'Fetches full history of archives from the Wayback machine',
     use: 'This is useful for understanding the history of a site, and how it has changed over time. It can also be useful for finding old versions of a site, or for finding content that has been removed.',
     resources: [{ title: 'Wayback Machine', link: 'https://archive.org/web/' }],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-history',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-history',
   },
   {
     id: 'rank',
@@ -567,7 +567,7 @@ const docs: Doc[] = [
       { title: 'Tranco List', link: 'https://tranco-list.eu/' },
       { title: 'Tranco Research Paper', link: 'https://tranco-list.eu/assets/tranco-ndss19.pdf' },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-rank',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-rank',
   },
   {
     id: 'block-lists',
@@ -581,7 +581,7 @@ const docs: Doc[] = [
         link: 'https://en.wikipedia.org/wiki/DNS_blocking',
       },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-blocks',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-blocks',
   },
   {
     id: 'threats',
@@ -593,7 +593,7 @@ const docs: Doc[] = [
       { title: 'URLHaus', link: 'https://urlhaus-api.abuse.ch/' },
       { title: 'PhishTank', link: 'https://www.phishtank.com/' },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-threats',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-threats',
   },
   {
     id: 'tls-connection',
@@ -607,7 +607,7 @@ const docs: Doc[] = [
         link: 'https://www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake/',
       },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-tls-cipher',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-tls-cipher',
   },
   {
     id: 'tls-security-audit',
@@ -622,7 +622,7 @@ const docs: Doc[] = [
         link: 'https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide',
       },
     ],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-tls-sec',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-tls-sec',
   },
   {
     id: 'tls-client-compat',
@@ -631,7 +631,7 @@ const docs: Doc[] = [
       'Simulates the TLS handshake against a panel of real-world clients (Chrome, Firefox, Safari, Edge, OpenSSL, Java, iOS, Android and more). For each, shows which protocol and cipher would be negotiated, or whether the client cannot connect at all.',
     use: 'Useful for confirming that older or restricted clients can still reach your site, and for spotting clients that would be locked out by a too-strict TLS config.',
     resources: [{ title: 'SSL Test (via SSL Labs)', link: 'https://www.ssllabs.com/ssltest/' }],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-tls-handshake',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-tls-handshake',
   },
   {
     id: 'screenshot',
@@ -640,7 +640,7 @@ const docs: Doc[] = [
       'This check takes a screenshot of webpage that the requested URL / IP resolves to, and displays it.',
     use: 'This may be useful to see what a given website looks like, free of the constraints of your browser, IP, or location.',
     resources: [],
-    screenshot: 'https://pixelflare.cc/alicia/web-check/wc-screenshot',
+    screenshot: 'https://pixelflare.cc/alicia/site-scan/wc-screenshot',
   },
   {
     id: 'subdomains',
@@ -665,12 +665,12 @@ const docs: Doc[] = [
 
 export const featureIntro = [
   'When conducting an OSINT investigation on a given website or host, there are several key areas to look at. Each of these are documented below, along with links to the tools and techniques you can use to gather the relevant information.',
-  'Web-Check can automate the process of gathering this data, but it will be up to you to interpret the results and draw conclusions.',
+  'SiteScan can automate the process of gathering this data, but it will be up to you to interpret the results and draw conclusions.',
 ];
 
 export const about = [
-  `Web-Check is a powerful all-in-one tool for discovering information about a website/host.
-The core philosophy is simple: feed Web-Check a URL and let it gather, collate, and present a broad array of open data for you to delve into.`,
+  `SiteScan is a powerful all-in-one tool for discovering information about a website/host.
+The core philosophy is simple: feed SiteScan a URL and let it gather, collate, and present a broad array of open data for you to delve into.`,
 
   `The report shines a spotlight onto potential attack vectors, existing security measures,
 and the web of connections within a site's architecture.
@@ -683,7 +683,7 @@ tester or are just interested in discovering the underlying technologies of a gi
 ];
 
 export const license = `The MIT License (MIT)
-Copyright (c) Alicia Sykes <alicia@omg.com> 
+Copyright (c) Jane Doe <alicia@omg.com> 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to deal 
@@ -704,10 +704,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 `;
 
 export const supportUs = [
-  'Web-Check is free to use without restriction.',
+  'SiteScan is free to use without restriction.',
   "All the code is open source, so you're also free to deploy your own instance, as well as fork, modify and distribute the code in both private and commercial settings.",
-  "Running web-check does cost me a small amount of money each month, so if you're finding the app useful, consider <a href='https://github.com/sponsors/Lissy93'>sponsoring me on GitHub</a> if you're able to. Even just $1 or $2/month would be a huge help in supporting the ongoing project running costs.",
-  "Otherwise, there are other ways you can help out, like submitting or reviewing a pull request to the <a href='https://github.com/Lissy93/web-check'>GitHub repo</a>, upvoting us on <a href='https://www.producthunt.com/posts/web-check'>Product Hunt</a>, or by sharing with your network.",
+  "Running site-scan does cost me a small amount of money each month, so if you're finding the app useful, consider <a href='https://github.com/sponsors/Lissy93'>sponsoring me on GitHub</a> if you're able to. Even just $1 or $2/month would be a huge help in supporting the ongoing project running costs.",
+  "Otherwise, there are other ways you can help out, like submitting or reviewing a pull request to the <a href='https://github.com/Lissy93/site-scan'>GitHub repo</a>, upvoting us on <a href='https://www.producthunt.com/posts/site-scan'>Product Hunt</a>, or by sharing with your network.",
   "But don't feel obliged to do anything, as this app (and all my other projects) will always remain 100% free and open source, and I will do my best to ensure the managed instances remain up and available for as long as possible :)",
 ];
 
