@@ -32,8 +32,21 @@ const { supportedChecks } = Astro.props;
       margin: 0.5rem 0;
       display: flex;
       gap: 0.5rem;
+      transition: all 0.2s ease-in-out;
+      cursor: default;
+      
+      &:hover {
+        transform: translateX(5px);
+        color: var(--primary);
+      }
+
       :global(svg) {
         color: var(--primary);
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      &:hover :global(svg) {
+        transform: scale(1.2);
       }
     }
   }

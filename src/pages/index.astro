@@ -5,6 +5,7 @@ import TempDisabled from '@/components/homepage/TempDisabled.astro';
 import HomeBackground from '@/components/homepage/HomeBackground';
 import AboutSection from '@/components/homepage/AboutSection.astro';
 import Footer from '@components/scafold/Footer.astro';
+import Screenshots from '@components/homepage/Screenshots.astro';
 
 const isBossServer = import.meta.env.BOSS_SERVER === 'true';
 
@@ -17,8 +18,15 @@ const disableEverything = import.meta.env.VITE_DISABLE_EVERYTHING === true;
   </Fragment>
   {disableEverything && <TempDisabled />}
   <main>
-    <HeroForm />
-    <AboutSection />
+    <div class="split-layout">
+      <div class="left-content">
+        <HeroForm />
+        <AboutSection />
+      </div>
+      <div class="right-content">
+        <Screenshots />
+      </div>
+    </div>
   </main>
   <Footer />
   <HomeBackground client:only="react" />
@@ -31,7 +39,34 @@ const disableEverything = import.meta.env.VITE_DISABLE_EVERYTHING === true;
     padding: 2rem;
     margin: 0 auto;
     z-index: 3;
-    background: var(--background);
+    position: relative;
+    background: transparent;
+
+    .split-layout {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+
+      .left-content {
+        flex: 1.2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .right-content {
+        flex: 0.8;
+        display: flex;
+        justify-content: flex-end;
+        @include tablet-landscape-down {
+          display: none;
+        }
+      }
+    }
+
     @include tablet-landscape-down {
       width: 96vw;
     }
