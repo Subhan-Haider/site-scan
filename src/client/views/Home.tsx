@@ -82,18 +82,28 @@ const SiteFeaturesWrapper = styled(StyledCard)`
     color: ${colors.textColor};
     li {
       position: relative;
-      margin: 0.1rem 0;
+      margin: 0.25rem 0;
       padding-left: 1.2rem;
       break-inside: avoid-column;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      transition: all 0.2s ease-in-out;
+      cursor: default;
+      &:hover {
+        transform: translateX(5px);
+        color: ${colors.primary};
+      }
     }
     li:before {
       content: '✓';
       color: ${colors.primary};
       position: absolute;
       left: 0;
+      transition: transform 0.2s ease-in-out;
+    }
+    li:hover:before {
+      transform: scale(1.2);
     }
     li:not(:last-child) a {
       color: inherit;
@@ -113,7 +123,7 @@ const makeAnchor = (title: string): string =>
     .replace(/\s+/g, '-');
 
 const Home = (): JSX.Element => {
-  const defaultPlaceholder = 'e.g. duck.com';
+  const defaultPlaceholder = 'e.g. subhan.tech';
   const [userInput, setUserInput] = useState('');
   const [errorMsg, setErrMsg] = useState('');
   const [placeholder] = useState(defaultPlaceholder);
@@ -192,6 +202,54 @@ const Home = (): JSX.Element => {
           Analyze!
         </Button>
       </UserInputMain>
+
+      <SiteFeaturesWrapper>
+        <div style={{ padding: '1rem', textAlign: 'center' }}>
+          <Heading as="h3" size="small" align="center" color={colors.primary}>
+            Quick Try
+          </Heading>
+          <div className="links" style={{ marginTop: '0.5rem' }}>
+            <Button onClick={() => { setUserInput('subhan.tech'); submit(); }}>subhan.tech</Button>
+            <Button onClick={() => { setUserInput('github.com'); submit(); }}>github.com</Button>
+            <Button onClick={() => { setUserInput('wikipedia.org'); submit(); }}>wikipedia.org</Button>
+          </div>
+        </div>
+        <hr style={{ border: `1px solid ${colors.background}`, width: '80%', margin: '0 auto 1rem auto' }} />
+        <ul>
+          <li>Archive History</li>
+          <li>Block List Check</li>
+          <li>Carbon Footprint</li>
+          <li>Cookies</li>
+          <li>DNS Server</li>
+          <li>DNS Records</li>
+          <li>DNSSEC</li>
+          <li>Site Features</li>
+          <li>Firewall Types</li>
+          <li>Get IP Address</li>
+          <li>Headers</li>
+          <li>HSTS</li>
+          <li>HTTP Security</li>
+          <li>Linked Pages</li>
+          <li>Mail Config</li>
+          <li>Open Ports</li>
+          <li>Quality Check</li>
+          <li>Global Rank</li>
+          <li>Redirects</li>
+          <li>Robots.txt</li>
+          <li>Screenshot</li>
+          <li>Security.txt</li>
+          <li>Sitemap</li>
+          <li>Social Tags</li>
+          <li>SSL Certificate</li>
+          <li>Uptime Status</li>
+          <li>Tech Stack</li>
+          <li>Known Threats</li>
+          <li>TLS Version</li>
+          <li>Trace Route</li>
+          <li>TXT Records</li>
+          <li>Whois Lookup</li>
+        </ul>
+      </SiteFeaturesWrapper>
 
 
       <Footer isFixed={true} />
