@@ -57,14 +57,17 @@ const SearchInput = styled.input`
 `;
 
 const DocsGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
+  column-count: 3;
+  column-gap: 1.5rem;
   width: 100%;
-  align-items: start;
+
+  @media (max-width: 900px) { column-count: 2; }
+  @media (max-width: 600px) { column-count: 1; }
 `;
 
 const DocCard = styled.div<{ isOpen: boolean }>`
+  break-inside: avoid-column;
+  margin-bottom: 1.5rem;
   background: ${colors.backgroundLighter};
   border: 2px solid ${({ isOpen }) => isOpen ? colors.primary : colors.bgShadowColor};
   border-radius: 8px;
