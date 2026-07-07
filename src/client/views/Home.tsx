@@ -251,6 +251,26 @@ const Home = (): JSX.Element => {
         </ul>
       </SiteFeaturesWrapper>
 
+      <SiteFeaturesWrapper style={{ marginTop: '0', padding: '1rem', textAlign: 'center' }}>
+        <Heading as="h3" size="small" align="center" color={colors.primary}>
+          Latest from the Blog
+        </Heading>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem', marginTop: '1rem' }}>
+          <a href="/blog/protecting-against-bots" style={{ textDecoration: 'none' }}>
+            <strong>How to Protect Your Website from Malicious Bots</strong>
+          </a>
+          <a href="/blog/importance-of-dnssec" style={{ textDecoration: 'none' }}>
+            <strong>The Importance of DNSSEC in Modern Web Security</strong>
+          </a>
+          <a href="/blog/hello-world" style={{ textDecoration: 'none' }}>
+            <strong>Welcome to the SiteScan Blog</strong>
+          </a>
+        </div>
+        <div style={{ marginTop: '1.5rem' }}>
+          <a href="/blog" style={{ color: colors.primary, fontWeight: 'bold' }}>View All Posts →</a>
+        </div>
+      </SiteFeaturesWrapper>
+
 
       <Footer isFixed={true} />
     </HomeContainer>
