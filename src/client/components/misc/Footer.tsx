@@ -79,10 +79,10 @@ const Footer = (props: { isFixed?: boolean }): JSX.Element => {
   return (
     <FooterContainer isFixed={props.isFixed}>
       <NavRow>
-        <Link to="/about">About</Link>
-        <Link to="/docs">Documentation</Link>
-        <Link to="/privacy">Privacy Policy</Link>
-        <Link to="/terms">Terms of Service</Link>
+        <a href="/about">About</a>
+        <a href="/docs">Documentation</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
         <a href="/blog">Blog</a>
       </NavRow>
       <SocialRow>

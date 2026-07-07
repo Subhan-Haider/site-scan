@@ -18,11 +18,15 @@ const HomeContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  min-height: 100vh;
   font-family: var(--font-mono);
-  padding: 1.5rem 1rem 4rem 1rem;
+  padding: 1.5rem 1rem 0 1rem;
   footer {
     z-index: 1;
+    margin-top: auto;
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+    margin-right: -1rem;
   }
 `;
 
@@ -203,6 +207,56 @@ const Home = (): JSX.Element => {
         </Button>
       </UserInputMain>
 
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', width: 'calc(100% - 2rem)', maxWidth: '60rem', margin: '0 auto 1rem auto' }}>
+        <a href="https://subhan.tech" target="_blank" rel="noreferrer" style={{ textDecoration: 'none', flex: '1 1 300px' }}>
+          <StyledCard style={{ 
+            display: 'flex', 
+            flexDirection: 'column',
+            justifyContent: 'center',
+            padding: '1.2rem', 
+            border: `2px solid ${colors.primary}`,
+            backgroundColor: colors.backgroundLighter,
+            boxShadow: `4px 4px 0px ${colors.primary}`,
+            height: '100%'
+          }}>
+            <div style={{ marginBottom: '0.8rem' }}>
+              <span style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '1px', color: colors.primary, fontWeight: 'bold' }}>Sponsored</span>
+              <Heading as="h3" size="small" style={{ margin: '0.3rem 0', color: colors.textColor }}>
+                Humanize AI
+              </Heading>
+              <p style={{ fontSize: '0.95rem', color: colors.textColorSecondary, margin: 0, lineHeight: 1.4 }}>
+                Bypass AI detectors with our state-of-the-art text humanization engine. Try it for free!
+              </p>
+            </div>
+            <span style={{ fontWeight: 'bold', color: colors.primary, whiteSpace: 'nowrap', marginTop: 'auto' }}>Learn More →</span>
+          </StyledCard>
+        </a>
+
+        <a href="https://www.lootops.website" target="_blank" rel="noreferrer" style={{ textDecoration: 'none', flex: '1 1 300px' }}>
+          <StyledCard style={{ 
+            display: 'flex', 
+            flexDirection: 'column',
+            justifyContent: 'center',
+            padding: '1.2rem', 
+            border: `2px solid ${colors.primary}`,
+            backgroundColor: colors.backgroundLighter,
+            boxShadow: `4px 4px 0px ${colors.primary}`,
+            height: '100%'
+          }}>
+            <div style={{ marginBottom: '0.8rem' }}>
+              <span style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '1px', color: colors.primary, fontWeight: 'bold' }}>Sponsored</span>
+              <Heading as="h3" size="small" style={{ margin: '0.3rem 0', color: colors.textColor }}>
+                Image Converter Pro
+              </Heading>
+              <p style={{ fontSize: '0.95rem', color: colors.textColorSecondary, margin: 0, lineHeight: 1.4 }}>
+                Studio-grade image & PDF conversion. Batch process entirely in your browser — zero data leaves your device.
+              </p>
+            </div>
+            <span style={{ fontWeight: 'bold', color: colors.primary, whiteSpace: 'nowrap', marginTop: 'auto' }}>Try for Free →</span>
+          </StyledCard>
+        </a>
+      </div>
+
       <SiteFeaturesWrapper>
         <div style={{ padding: '1rem', textAlign: 'center' }}>
           <Heading as="h3" size="small" align="center" color={colors.primary}>
@@ -251,7 +305,7 @@ const Home = (): JSX.Element => {
         </ul>
       </SiteFeaturesWrapper>
 
-      <SiteFeaturesWrapper style={{ marginTop: '0', padding: '1rem', textAlign: 'center' }}>
+      <SiteFeaturesWrapper style={{ marginTop: '0', marginBottom: '2rem', padding: '1rem', textAlign: 'center' }}>
         <Heading as="h3" size="small" align="center" color={colors.primary}>
           Latest from the Blog
         </Heading>
@@ -272,7 +326,7 @@ const Home = (): JSX.Element => {
       </SiteFeaturesWrapper>
 
 
-      <Footer isFixed={true} />
+      <Footer />
     </HomeContainer>
   );
 };

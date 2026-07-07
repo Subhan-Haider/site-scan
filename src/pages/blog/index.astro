@@ -57,8 +57,8 @@ posts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.fron
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #ffffff;
-    color: #1a1a1a;
+    background: var(--background);
+    color: var(--text-color);
   }
 
   .blog-container {
@@ -76,13 +76,13 @@ posts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.fron
 
   .blog-header h1 {
     font-size: 3rem;
-    color: #4a7700;
+    color: var(--primary);
     margin-bottom: 0.5rem;
   }
 
   .blog-header p {
     font-size: 1.2rem;
-    color: #666;
+    color: var(--text-color-secondary);
   }
 
   .post-list {
@@ -95,34 +95,34 @@ posts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.fron
     display: block;
     text-decoration: none;
     color: inherit;
-    background: #fdfdfd;
-    border: 1px solid #e0e0e0;
+    background: var(--background-lighter);
+    border: 1px solid var(--bg-shadow-color);
     border-radius: 8px;
     padding: 2rem;
     transition: all 0.2s ease;
-    box-shadow: 2px 2px 0 #d0d0d0;
+    box-shadow: 2px 2px 0 var(--bg-shadow-color);
   }
 
   .post-card:hover {
     transform: translateY(-2px);
-    box-shadow: 4px 4px 0 #4a7700;
-    border-color: #4a7700;
+    box-shadow: 4px 4px 0 var(--primary);
+    border-color: var(--primary);
   }
 
   .post-card h2 {
     font-size: 1.6rem;
-    color: #333;
+    color: var(--text-color);
     margin-top: 0;
     margin-bottom: 0.5rem;
   }
 
   .post-card:hover h2 {
-    color: #4a7700;
+    color: var(--primary);
   }
 
   .post-meta {
     font-size: 0.9rem;
-    color: #888;
+    color: var(--text-color-secondary);
     margin-bottom: 1rem;
     display: flex;
     gap: 1rem;
@@ -130,14 +130,14 @@ posts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.fron
 
   .description {
     font-size: 1.05rem;
-    color: #555;
+    color: var(--text-color);
     line-height: 1.6;
     margin-bottom: 1.5rem;
   }
 
   .read-more {
     font-weight: 600;
-    color: #4a7700;
+    color: var(--primary);
     font-size: 0.95rem;
   }
 </style>

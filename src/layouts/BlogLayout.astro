@@ -36,125 +36,111 @@ const { frontmatter } = Astro.props;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #ffffff; /* Explicit light theme */
-    color: #1a1a1a;
+    background: var(--background);
+    color: var(--text-color);
   }
 
   .blog-container {
     flex: 1;
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem 1.5rem;
+    padding: 3rem 1.5rem;
     width: 100%;
-  }
-
-  .back-link {
-    display: inline-block;
-    margin-bottom: 2rem;
-    color: #4a7700;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  .back-link:hover {
-    text-decoration: underline;
   }
 
   .blog-header {
     margin-bottom: 3rem;
-    border-bottom: 2px solid #f0f0f0;
-    padding-bottom: 1.5rem;
+    text-align: center;
   }
 
-  .blog-header h1 {
+  .blog-title {
     font-size: 2.5rem;
-    color: #4a7700;
-    margin-bottom: 0.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
     line-height: 1.2;
   }
 
   .blog-meta {
-    color: #666;
-    font-size: 0.95rem;
+    font-size: 1rem;
+    color: var(--text-color-secondary);
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
   }
 
-  .markdown-content {
+  .blog-content {
     font-size: 1.1rem;
-    line-height: 1.7;
-    color: #333;
+    line-height: 1.8;
+    color: var(--text-color);
   }
 
-  /* Basic Markdown Styling */
-  .markdown-content :global(h2) {
+  .blog-content :global(h2) {
     font-size: 1.8rem;
-    color: #4a7700;
+    color: var(--text-color);
     margin-top: 2.5rem;
     margin-bottom: 1rem;
   }
 
-  .markdown-content :global(h3) {
+  .blog-content :global(h3) {
     font-size: 1.4rem;
-    color: #4a7700;
+    color: var(--text-color);
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
 
-  .markdown-content :global(p) {
+  .blog-content :global(p) {
     margin-bottom: 1.5rem;
   }
 
-  .markdown-content :global(ul), .markdown-content :global(ol) {
-    margin-bottom: 1.5rem;
-    padding-left: 2rem;
-  }
-
-  .markdown-content :global(li) {
-    margin-bottom: 0.5rem;
-  }
-
-  .markdown-content :global(a) {
-    color: #0066cc;
+  .blog-content :global(a) {
+    color: var(--primary);
     text-decoration: none;
   }
 
-  .markdown-content :global(a:hover) {
+  .blog-content :global(a:hover) {
     text-decoration: underline;
   }
 
-  .markdown-content :global(blockquote) {
-    border-left: 4px solid #4a7700;
-    background: #f9f9f9;
-    padding: 1rem;
-    margin: 1.5rem 0;
-    font-style: italic;
-    color: #555;
+  .blog-content :global(ul), 
+  .blog-content :global(ol) {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
   }
 
-  .markdown-content :global(pre) {
-    background: #1a1a1a;
-    color: #fff;
-    padding: 1.2rem;
-    border-radius: 6px;
-    overflow-x: auto;
-    margin-bottom: 1.5rem;
-    font-size: 0.9rem;
+  .blog-content :global(li) {
+    margin-bottom: 0.5rem;
   }
-  
-  .markdown-content :global(code) {
-    font-family: 'Courier New', Courier, monospace;
-    background: #f0f0f0;
+
+  .blog-content :global(blockquote) {
+    border-left: 4px solid var(--primary);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: var(--text-color-secondary);
+    font-style: italic;
+  }
+
+  .blog-content :global(code) {
+    background: var(--background-darker);
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
-    font-size: 0.95em;
-    color: #cc3300;
+    font-family: var(--font-mono);
+    font-size: 0.9em;
   }
-  
-  .markdown-content :global(pre code) {
-    background: transparent;
+
+  .blog-content :global(pre) {
+    background: var(--background-darker);
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .blog-content :global(pre code) {
+    background: none;
     padding: 0;
-    color: inherit;
   }
-  
-  .markdown-content :global(img) {
+  .blog-content :global(img) {
     max-width: 100%;
     height: auto;
     border-radius: 6px;
