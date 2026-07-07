@@ -4,6 +4,8 @@ import styled from '@emotion/styled';
 import { ToastContainer } from 'react-toastify';
 
 import colors from 'client/styles/colors';
+import Button from 'client/components/Form/Button';
+import Sponsors from 'client/components/misc/Sponsors';
 import Heading from 'client/components/Form/Heading';
 import Modal from 'client/components/Form/Modal';
 import Footer from 'client/components/misc/Footer';
@@ -283,6 +285,11 @@ const Results = (props: { address?: string }): JSX.Element => {
           </DownloadButton>
         </div>
       </DownloadSection>
+
+      <div style={{ margin: '2rem 0' }}>
+        <Sponsors />
+      </div>
+
       <Footer />
     </ResultsOuter>
   );

@@ -6,6 +6,7 @@ import Footer from 'client/components/misc/Footer';
 import Button from 'client/components/Form/Button';
 import Heading from 'client/components/Form/Heading';
 import { StyledCard } from 'client/components/Form/Card';
+import Sponsors from 'client/components/misc/Sponsors';
 import colors from 'client/styles/colors';
 
 const BackLink = styled.a`
@@ -292,6 +293,11 @@ const About = (): JSX.Element => {
           </div>
         </CTASection>
       </AboutContainer>
+      
+      <div style={{ marginTop: '2rem' }}>
+        <Sponsors />
+      </div>
+
       <Footer />
     </PageWrapper>
   );

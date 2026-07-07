@@ -1,0 +1,61 @@
+@use '../../../styles/colors.scss' as *;
+
+.sponsors-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: calc(100% - 2rem);
+  max-width: 60rem;
+  margin: 0 auto 2rem auto;
+  z-index: 2;
+}
+
+.sponsor-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.2rem;
+  border: 2px solid var(--primary);
+  background-color: var(--background-lighter);
+  box-shadow: 4px 4px 0px var(--primary);
+  height: 100%;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 6px 6px 0px var(--primary);
+  }
+
+  .sponsor-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary);
+    font-weight: bold;
+    font-family: var(--font-mono);
+  }
+
+  .sponsor-title {
+    margin: 0.3rem 0;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .sponsor-desc {
+    font-size: 0.95rem;
+    color: var(--text-color-secondary);
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .sponsor-cta {
+    font-weight: bold;
+    color: var(--primary);
+    white-space: nowrap;
+    margin-top: auto;
+    font-family: var(--font-mono);
+  }
+}

@@ -2,6 +2,7 @@
 import Base from '@layouts/Base.astro';
 import Footer from '../../client/components/misc/Footer';
 import Nav from '../../client/components/Form/Nav';
+import Sponsors from '../../client/components/misc/Sponsors';
 
 // Fetch all markdown files in the blog directory (Astro v5+ / v6 compatible)
 const postModules = import.meta.glob('./*.md', { eager: true });
@@ -47,6 +48,10 @@ posts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.fron
         )}
       </div>
     </main>
+
+    <div style="margin: 2rem 0;">
+      <Sponsors client:load />
+    </div>
 
     <Footer client:load />
   </div>

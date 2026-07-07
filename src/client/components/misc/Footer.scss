@@ -1,0 +1,79 @@
+@use '../../../styles/colors.scss' as *;
+
+.footer-container {
+  width: 100%;
+  padding: 1.5rem;
+  background: var(--background-lighter);
+  border-top: 1px solid var(--bg-shadow-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+
+  &.is-fixed {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    
+    &:hover {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+  }
+}
+
+.nav-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  @media (max-width: 600px) { gap: 1rem; }
+}
+
+.social-row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  
+  a:hover { opacity: 1; }
+  
+  @media (max-width: 600px) { gap: 0.8rem; }
+}
+
+.projects-row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 0.78rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--bg-shadow-color);
+  width: 100%;
+
+  span.label {
+    opacity: 0.5;
+    font-weight: normal;
+    margin-right: 0.25rem;
+  }
+  
+  a {
+    color: var(--primary);
+    font-weight: bold;
+    &:hover { color: var(--text-color); }
+  }
+  
+  @media (max-width: 600px) { gap: 0.8rem; }
+}

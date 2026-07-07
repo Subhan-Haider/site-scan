@@ -3,7 +3,7 @@ layout: ../../layouts/BlogLayout.astro
 title: "Welcome to the SiteScan Blog"
 description: "We're excited to launch our new blog to share security tips, updates, and deep dives into how the web works."
 pubDate: "2026-07-07"
-author: "SiteScan Team"
+author: "Subhan Haider"
 ---
 
 Welcome to the **SiteScan Blog**! We're thrilled to announce this new space where we'll be sharing updates, tutorials, and insights into web security and performance.

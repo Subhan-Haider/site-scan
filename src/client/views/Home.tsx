@@ -8,7 +8,7 @@ import Button from 'client/components/Form/Button';
 import { StyledCard } from 'client/components/Form/Card';
 import Footer from 'client/components/misc/Footer';
 import FancyBackground from 'client/components/misc/FancyBackground';
-
+import Sponsors from 'client/components/misc/Sponsors';
 
 import colors from 'client/styles/colors';
 import { determineAddressType, normalizeAddress } from 'client/utils/address-type-checker';
@@ -207,55 +207,7 @@ const Home = (): JSX.Element => {
         </Button>
       </UserInputMain>
 
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', width: 'calc(100% - 2rem)', maxWidth: '60rem', margin: '0 auto 1rem auto' }}>
-        <a href="https://subhan.tech" target="_blank" rel="noreferrer" style={{ textDecoration: 'none', flex: '1 1 300px' }}>
-          <StyledCard style={{ 
-            display: 'flex', 
-            flexDirection: 'column',
-            justifyContent: 'center',
-            padding: '1.2rem', 
-            border: `2px solid ${colors.primary}`,
-            backgroundColor: colors.backgroundLighter,
-            boxShadow: `4px 4px 0px ${colors.primary}`,
-            height: '100%'
-          }}>
-            <div style={{ marginBottom: '0.8rem' }}>
-              <span style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '1px', color: colors.primary, fontWeight: 'bold' }}>Sponsored</span>
-              <Heading as="h3" size="small" style={{ margin: '0.3rem 0', color: colors.textColor }}>
-                Humanize AI
-              </Heading>
-              <p style={{ fontSize: '0.95rem', color: colors.textColorSecondary, margin: 0, lineHeight: 1.4 }}>
-                Bypass AI detectors with our state-of-the-art text humanization engine. Try it for free!
-              </p>
-            </div>
-            <span style={{ fontWeight: 'bold', color: colors.primary, whiteSpace: 'nowrap', marginTop: 'auto' }}>Learn More →</span>
-          </StyledCard>
-        </a>
-
-        <a href="https://www.lootops.website" target="_blank" rel="noreferrer" style={{ textDecoration: 'none', flex: '1 1 300px' }}>
-          <StyledCard style={{ 
-            display: 'flex', 
-            flexDirection: 'column',
-            justifyContent: 'center',
-            padding: '1.2rem', 
-            border: `2px solid ${colors.primary}`,
-            backgroundColor: colors.backgroundLighter,
-            boxShadow: `4px 4px 0px ${colors.primary}`,
-            height: '100%'
-          }}>
-            <div style={{ marginBottom: '0.8rem' }}>
-              <span style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '1px', color: colors.primary, fontWeight: 'bold' }}>Sponsored</span>
-              <Heading as="h3" size="small" style={{ margin: '0.3rem 0', color: colors.textColor }}>
-                Image Converter Pro
-              </Heading>
-              <p style={{ fontSize: '0.95rem', color: colors.textColorSecondary, margin: 0, lineHeight: 1.4 }}>
-                Studio-grade image & PDF conversion. Batch process entirely in your browser — zero data leaves your device.
-              </p>
-            </div>
-            <span style={{ fontWeight: 'bold', color: colors.primary, whiteSpace: 'nowrap', marginTop: 'auto' }}>Try for Free →</span>
-          </StyledCard>
-        </a>
-      </div>
+      <Sponsors />
 
       <SiteFeaturesWrapper>
         <div style={{ padding: '1rem', textAlign: 'center' }}>
