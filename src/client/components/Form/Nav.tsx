@@ -1,32 +1,17 @@
-import styled from '@emotion/styled';
 import type { ReactNode } from 'react';
-
-import { StyledCard } from 'client/components/Form/Card';
-import Heading from 'client/components/Form/Heading';
-import colors from 'client/styles/colors';
-
-const Header = styled(StyledCard)`
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
-  align-items: center;
-  width: 95vw;
-`;
+import './Nav.scss';
 
 const Nav = (props: { children?: ReactNode }) => {
   return (
-    <Header as="header">
-      <Heading color={colors.primary} size="large">
+    <header className="nav-header">
+      <h1 className="nav-heading">
         <img width="40" src="/site-scan.png" alt="SiteScan Icon" />
         <a href="/check" target="_self">
           SiteScan
         </a>
-      </Heading>
+      </h1>
       {props.children && props.children}
-    </Header>
+    </header>
   );
 };
 
