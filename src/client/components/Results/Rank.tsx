@@ -44,27 +44,29 @@ function Chart(chartData: { date: string; uv: number }[], data: any) {
       <AreaChart width={400} height={100} data={chartData}>
         <defs>
           <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="20%" stopColor="#0f1620" stopOpacity={0.8} />
-            <stop offset="80%" stopColor="#0f1620" stopOpacity={0} />
+            <stop offset="20%" stopColor={colors.primary} stopOpacity={0.6} />
+            <stop offset="80%" stopColor={colors.primary} stopOpacity={0.05} />
           </linearGradient>
         </defs>
         <CartesianGrid
           strokeDasharray="4"
-          strokeWidth={0.25}
+          strokeWidth={0.5}
+          stroke={colors.bgShadowColor}
           verticalPoints={[50, 100, 150, 200, 250, 300, 350]}
           horizontalPoints={[25, 50, 75]}
         />
         <Tooltip
-          contentStyle={{ background: colors.background, color: colors.textColor, borderRadius: 4 }}
+          contentStyle={{ background: colors.backgroundLighter, color: colors.textColor, borderRadius: 4, border: `1px solid ${colors.bgShadowColor}` }}
           labelFormatter={(value) => ['Date : ', data[value].date]}
         />
         <Area
           type="monotone"
           dataKey="uv"
-          stroke="#9fef00"
+          stroke={colors.primary}
+          strokeWidth={2}
           fillOpacity={1}
           name="Rank"
-          fill={`${colors.backgroundDarker}a1`}
+          fill="url(#colorUv)"
         />
       </AreaChart>
     </ResponsiveContainer>
