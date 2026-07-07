@@ -100,6 +100,12 @@ const Footer = (props: { isFixed?: boolean }): JSX.Element => {
         <a href="https://subhan.tech" target="_blank" rel="noreferrer">Humanize AI</a>
         <a href="https://codelens.site" target="_blank" rel="noreferrer">CodeLens</a>
         <a href="https://blizflow.online" target="_blank" rel="noreferrer">BlizFlow</a>
+        <a href="https://adshield-vpn.subhan.tech" target="_blank" rel="noreferrer">AdShield VPN</a>
+        <a href="https://emoji.subhan.tech" target="_blank" rel="noreferrer">Emoji Smuggle</a>
+        <a href="https://pong.subhan.tech" target="_blank" rel="noreferrer">Pixel Pong</a>
+        <a href="https://security.subhan.tech" target="_blank" rel="noreferrer">Stealth Vault</a>
+        <a href="https://lootops.me" target="_blank" rel="noreferrer">LootOps</a>
+        <a href="https://media.subhan.tech" target="_blank" rel="noreferrer">Media Server</a>
       </ProjectsRow>
     </FooterContainer>
   );

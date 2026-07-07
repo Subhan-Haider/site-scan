@@ -3,8 +3,16 @@ import Base from '@layouts/Base.astro';
 import Footer from '../../client/components/misc/Footer';
 import Nav from '../../client/components/Form/Nav';
 
-// Fetch all markdown files in the blog directory
-const posts = await Astro.glob('./*.md');
+// Fetch all markdown files in the blog directory (Astro v5+ / v6 compatible)
+const postModules = import.meta.glob('./*.md', { eager: true });
+const posts = Object.entries(postModules).map(([filepath, mod]: [string, any]) => {
+  // Convert file path like './hello-world.md' → '/blog/hello-world'
+  const slug = filepath.replace(/^\.\//, '').replace(/\.md$/, '');
+  return {
+    url: `/blog/${slug}`,
+    frontmatter: mod.frontmatter,
+  };
+});
 // Sort by publish date (newest first)
 posts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
 ---
