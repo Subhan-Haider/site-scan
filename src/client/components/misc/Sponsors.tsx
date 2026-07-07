@@ -22,7 +22,7 @@ const Sponsors = () => {
             <span className="sponsor-label">Sponsored</span>
             <h3 className="sponsor-title">Image Converter Pro</h3>
             <p className="sponsor-desc">
-              Studio-grade image & PDF conversion. Batch process entirely in your browser — zero data leaves your device.
+              Studio-grade image conversion. Batch process entirely in your browser — zero data leaves your device.
             </p>
           </div>
           <span className="sponsor-cta">Try for Free →</span>
