@@ -24,9 +24,8 @@ const HomeContainer = styled.section`
   footer {
     z-index: 1;
     margin-top: auto;
-    width: calc(100% + 2rem);
-    margin-left: -1rem;
-    margin-right: -1rem;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
   }
 `;
 
@@ -207,8 +206,6 @@ const Home = (): JSX.Element => {
         </Button>
       </UserInputMain>
 
-      <Sponsors />
-
       <SiteFeaturesWrapper>
         <div style={{ padding: '1rem', textAlign: 'center' }}>
           <Heading as="h3" size="small" align="center" color={colors.primary}>
@@ -277,6 +274,7 @@ const Home = (): JSX.Element => {
         </div>
       </SiteFeaturesWrapper>
 
+      <Sponsors />
 
       <Footer />
     </HomeContainer>
