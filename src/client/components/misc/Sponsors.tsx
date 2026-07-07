@@ -1,13 +1,20 @@
 import styled from '@emotion/styled';
 import colors from 'client/styles/colors';
 
+const OuterStrip = styled.div`
+  width: 100%;
+  background: ${colors.background};
+  border-top: 1px solid ${colors.bgShadowColor};
+  padding: 1.25rem 1rem;
+`;
+
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  width: calc(100% - 2rem);
+  width: 100%;
   max-width: 60rem;
-  margin: 0.5rem auto 1.5rem auto;
+  margin: 0 auto;
 `;
 
 const CardLink = styled.a`
@@ -73,7 +80,8 @@ const Cta = styled.span`
 
 const Sponsors = () => {
   return (
-    <Container>
+    <OuterStrip>
+      <Container>
       <CardLink href="https://subhan.tech" target="_blank" rel="noreferrer">
         <Card>
           <div>
@@ -95,7 +103,8 @@ const Sponsors = () => {
           <Cta>Try for Free →</Cta>
         </Card>
       </CardLink>
-    </Container>
+      </Container>
+    </OuterStrip>
   );
 };
 
