@@ -21,11 +21,11 @@ const HomeContainer = styled.section`
   min-height: 100vh;
   font-family: var(--font-mono);
   padding: 1.5rem 1rem 0 1rem;
+  overflow-x: hidden;
   footer {
     z-index: 1;
     margin-top: auto;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    align-self: stretch;
   }
 `;
 

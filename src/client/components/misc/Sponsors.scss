@@ -6,56 +6,70 @@
   gap: 1rem;
   width: calc(100% - 2rem);
   max-width: 60rem;
-  margin: 0 auto 2rem auto;
+  margin: 0.5rem auto 1.5rem auto;
   z-index: 2;
 }
 
 .sponsor-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 1.2rem;
-  border: 2px solid var(--primary);
-  background-color: var(--background-lighter);
-  box-shadow: 4px 4px 0px var(--primary);
-  height: 100%;
+  justify-content: space-between;
+  padding: 1.2rem 1.4rem;
+  border: 2px solid var(--primary, #4a7700);
+  background-color: var(--background-lighter, #ffffff);
+  box-shadow: 4px 4px 0px var(--primary, #4a7700);
   border-radius: 8px;
   transition: all 0.2s ease;
   position: relative;
+  min-height: 120px;
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 6px 6px 0px var(--primary);
+    box-shadow: 6px 6px 0px var(--primary, #4a7700);
   }
 
   .sponsor-label {
-    font-size: 0.75rem;
+    display: inline-block;
+    font-size: 0.7rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--primary);
+    letter-spacing: 1.5px;
+    color: var(--primary, #4a7700);
     font-weight: bold;
-    font-family: var(--font-mono);
+    font-family: var(--font-mono, monospace);
+    border: 1px solid var(--primary, #4a7700);
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
   }
 
   .sponsor-title {
-    margin: 0.3rem 0;
-    color: var(--text-color);
-    font-size: 1.5rem;
+    margin: 0.3rem 0 0.4rem 0;
+    color: var(--text-color, #1a1a1a);
+    font-size: 1.35rem;
     font-weight: bold;
+    line-height: 1.2;
   }
 
   .sponsor-desc {
-    font-size: 0.95rem;
-    color: var(--text-color-secondary);
-    margin: 0;
-    line-height: 1.4;
+    font-size: 0.88rem;
+    color: var(--text-color-secondary, #57667e);
+    margin: 0 0 0.8rem 0;
+    line-height: 1.45;
+    flex: 1;
   }
 
   .sponsor-cta {
+    display: inline-block;
     font-weight: bold;
-    color: var(--primary);
+    color: var(--primary, #4a7700);
     white-space: nowrap;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.85rem;
+    text-decoration: none;
     margin-top: auto;
-    font-family: var(--font-mono);
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
