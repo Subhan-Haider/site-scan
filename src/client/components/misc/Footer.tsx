@@ -52,6 +52,29 @@ const SocialRow = styled.div`
   @media (max-width: 600px) { gap: 0.8rem; }
 `;
 
+const ProjectsRow = styled.div`
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 0.78rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid ${colors.bgShadowColor};
+  width: 100%;
+
+  span.label {
+    opacity: 0.5;
+    font-weight: normal;
+    margin-right: 0.25rem;
+  }
+  a {
+    color: ${colors.primary};
+    font-weight: bold;
+    &:hover { color: ${colors.textColor}; }
+  }
+  @media (max-width: 600px) { gap: 0.8rem; }
+`;
+
 const Footer = (props: { isFixed?: boolean }): JSX.Element => {
   return (
     <FooterContainer isFixed={props.isFixed}>
@@ -72,6 +95,12 @@ const Footer = (props: { isFixed?: boolean }): JSX.Element => {
         <a href="https://discord.gg/MmRfqXqvC2" target="_blank" rel="noreferrer">Discord</a>
         <a href="https://paypal.me/Subhanhaide" target="_blank" rel="noreferrer" style={{ color: colors.primary, fontWeight: 'bold' }}>Support</a>
       </SocialRow>
+      <ProjectsRow>
+        <span className="label">My Projects:</span>
+        <a href="https://subhan.tech" target="_blank" rel="noreferrer">Humanize AI</a>
+        <a href="https://codelens.site" target="_blank" rel="noreferrer">CodeLens</a>
+        <a href="https://blizflow.online" target="_blank" rel="noreferrer">BlizFlow</a>
+      </ProjectsRow>
     </FooterContainer>
   );
 };
