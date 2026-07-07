@@ -135,4 +135,4 @@ Contributions are what make the open source community such an amazing place to l
 
 ## 📜 License
 
-This project is open-source and available under the [GNU General Public License v3.0 (GPLv3)](LICENSE).
+This project is open-source and available under the [GNU General Public License v3.0 (GPLv3)](https://github.com/Subhan-Haider/site-scan/blob/main/LICENSE).
