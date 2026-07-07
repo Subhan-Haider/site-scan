@@ -116,12 +116,59 @@ This project is maintained by **Subhan Haider**. Check out some of my other proj
 
 ## 🐳 Deployment
 
-You can deploy SiteScan easily via Docker!
+You can deploy SiteScan easily via Docker or on a bare-metal server.
+
+### Option 1: Docker (Recommended)
 ```bash
 docker build -t sitescan .
-docker run -p 4321:4321 -p 3001:3001 sitescan
+docker run -p 4321:4321 -p 3001:3001 -d sitescan
 ```
 *Note: Make sure to pass your `.env` variables into the Docker container for API keys to work.*
+
+### Option 2: Bare-Metal Server (Node.js/PM2)
+If you prefer running directly on a Linux server without Docker:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Subhan-Haider/site-scan.git
+   cd site-scan
+   ```
+2. **Install dependencies**
+   ```bash
+   npm install --legacy-peer-deps
+   ```
+3. **Build the frontend**
+   ```bash
+   npm run build
+   ```
+4. **Start the API and Frontend** (You can use PM2 to keep it running in the background)
+   ```bash
+   npm install -g pm2
+   pm2 start server.js --name "sitescan-api"
+   pm2 start "npm run preview" --name "sitescan-frontend"
+   ```
+
+### ⚙️ Changing the Default Ports
+By default, the backend API runs on `3001` and the frontend on `4321`. 
+To change this, edit your `.env` file or pass environment variables:
+```bash
+# Change Backend Port
+PORT=8080 npm run start
+
+# Change Frontend Port (Astro)
+PORT=80 npm run preview
+```
+
+### 🔄 Updating to the Latest Version
+To get the latest features and bug fixes, simply pull the latest code and rebuild:
+```bash
+cd site-scan
+git pull origin main
+npm install --legacy-peer-deps
+npm run build
+# Then restart your docker container or PM2 instances
+pm2 restart all
+```
 
 ## 🤝 Contributing
 
