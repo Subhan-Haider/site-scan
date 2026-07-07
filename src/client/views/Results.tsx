@@ -26,6 +26,7 @@ import keys from 'client/utils/get-keys';
 import useJobs from 'client/hooks/useJobs';
 import { jobs, allCards, allCardIds } from 'client/jobs/registry';
 import { runAnalysis } from 'client/analysis/registry';
+import { downloadReport, downloadJson } from 'client/utils/download-report';
 
 const ResultsOuter = styled.div`
   display: flex;
@@ -51,6 +52,49 @@ const ResultsContent = styled.section`
   .flash > section {
     animation: cardFlash 1.2s ease-out;
     border-radius: 8px;
+  }
+`;
+
+const DownloadButton = styled.button`
+  background: ${colors.backgroundLighter};
+  color: ${colors.primary};
+  border: 2px solid ${colors.primary};
+  border-radius: 6px;
+  padding: 0.4rem 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  &:hover {
+    background: ${colors.primary};
+    color: #fff;
+  }
+`;
+
+const DownloadSection = styled.div`
+  width: 95vw;
+  margin: 1rem auto 2rem auto;
+  background: ${colors.backgroundLighter};
+  border: 2px solid ${colors.bgShadowColor};
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  box-shadow: 3px 3px 0px ${colors.bgShadowColor};
+
+  .download-text {
+    h3 { color: ${colors.primary}; margin: 0 0 0.25rem 0; font-size: 1rem; }
+    p { margin: 0; font-size: 0.85rem; color: ${colors.textColorSecondary}; }
+  }
+  .download-buttons {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
   }
 `;
 
@@ -222,6 +266,20 @@ const Results = (props: { address?: string }): JSX.Element => {
         theme="dark"
         position="bottom-right"
       />
+      <DownloadSection>
+        <div className="download-text">
+          <h3>&#11015; Download Full Report</h3>
+          <p>Export all scan results for {cardsToShow.length} checks as a portable HTML report or raw JSON data.</p>
+        </div>
+        <div className="download-buttons">
+          <DownloadButton onClick={() => downloadReport(address, jobsState)}>
+            &#11015; HTML Report
+          </DownloadButton>
+          <DownloadButton onClick={() => downloadJson(address, jobsState)}>
+            &#11015; JSON Export
+          </DownloadButton>
+        </div>
+      </DownloadSection>
       <Footer />
     </ResultsOuter>
   );

@@ -5,6 +5,7 @@ import Results from 'client/views/Results.tsx';
 import About from 'client/views/About.tsx';
 import Privacy from 'client/views/Privacy.tsx';
 import Terms from 'client/views/Terms.tsx';
+import Docs from 'client/views/Docs.tsx';
 import NotFound from 'client/views/NotFound.tsx';
 
 import ErrorBoundary from 'client/components/boundaries/PageError.tsx';
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="about" element={<About />} />
           <Route path="privacy" element={<Privacy />} />
           <Route path="terms" element={<Terms />} />
+          <Route path="docs" element={<Docs />} />
           <Route path=":urlToScan" element={<Results />} />
           <Route path="*" element={<NotFound />} />
         </Route>
@@ -36,6 +38,7 @@ export default function App() {
           <Route path="about" element={<About />} />
           <Route path="privacy" element={<Privacy />} />
           <Route path="terms" element={<Terms />} />
+          <Route path="docs" element={<Docs />} />
         </Route>
       </Routes>
     </ErrorBoundary>

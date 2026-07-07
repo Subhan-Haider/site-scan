@@ -33,15 +33,15 @@ const MapChart = (location: Props) => {
       </Geographies>
       <Annotation
         subject={[lon, lat]}
-        dx={-80}
-        dy={-80}
+        dx={0}
+        dy={-50}
         connectorProps={{
           stroke: colors.textColor,
           strokeWidth: 3,
           strokeLinecap: 'round',
         }}
       >
-        <text x="-8" textAnchor="end" fill={colors.textColor} fontSize={25}>
+        <text x="0" y="-10" textAnchor="middle" fill={colors.textColor} fontSize={22} fontWeight="bold">
           {label || 'Server'}
         </text>
       </Annotation>

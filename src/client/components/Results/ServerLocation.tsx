@@ -9,10 +9,12 @@ import Row, { StyledRow } from 'client/components/Form/Row';
 const cardStyles = '';
 
 const SmallText = styled.span`
-  opacity: 0.5;
+  opacity: 0.6;
   font-size: ${TextSizes.xSmall};
-  text-align: right;
+  text-align: center;
   display: block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 `;
 
 const MapRow = styled(StyledRow)`

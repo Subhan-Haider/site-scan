@@ -42,6 +42,7 @@ const Footer = (props: { isFixed?: boolean }): JSX.Element => {
   return (
     <FooterContainer isFixed={props.isFixed}>
       <Link to="/about">About</Link>
+      <Link to="/docs">Documentation</Link>
       <Link to="/privacy">Privacy Policy</Link>
       <Link to="/terms">Terms of Service</Link>
       <a target="_blank" rel="noreferrer" href="https://github.com/Subhan-Haider/site-scan">GitHub</a>
