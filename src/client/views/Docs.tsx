@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Footer from 'client/components/misc/Footer';
+import Sponsors from 'client/components/misc/Sponsors';
 import Heading from 'client/components/Form/Heading';
 import colors from 'client/styles/colors';
 import docs, { type Doc } from 'client/utils/docs';
@@ -11,15 +12,18 @@ const PageWrapper = styled.div`
   min-height: 100vh;
   background: ${colors.background};
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 `;
 
 const PageContainer = styled.div`
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 3rem 1.5rem 4rem 1.5rem;
+  padding: 3rem 1.5rem 0rem 1.5rem;
   display: flex;
   flex-direction: column;
+  flex: 1;
   gap: 2rem;
   font-family: var(--font-mono);
   box-sizing: border-box;
@@ -210,6 +214,11 @@ const Docs = (): JSX.Element => {
           </Link>
         </div>
       </PageContainer>
+      
+      <div style={{ margin: '2rem 0' }}>
+        <Sponsors />
+      </div>
+
       <Footer />
     </PageWrapper>
   );
