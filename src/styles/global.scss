@@ -2,6 +2,8 @@
 @forward './colors';
 @forward './media-queries';
 @forward './typography';
+@import '../client/components/misc/Sponsors.scss';
+@import '../client/components/misc/Footer.scss';
 
 /* CSS Reset - Normalize dimensions and spacing across browsers */
 *,

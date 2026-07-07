@@ -1,13 +1,19 @@
 @use '../../../styles/colors.scss' as *;
 
+.sponsors-outer {
+  width: 100%;
+  background: var(--background);
+  border-top: 1px solid var(--bg-shadow-color);
+  padding: 1.25rem 1rem;
+}
+
 .sponsors-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  width: calc(100% - 2rem);
+  width: 100%;
   max-width: 60rem;
-  margin: 0.5rem auto 1.5rem auto;
-  z-index: 2;
+  margin: 0 auto;
 }
 
 .sponsor-card {
