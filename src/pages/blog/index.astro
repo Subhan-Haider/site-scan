@@ -1,0 +1,135 @@
+---
+import Base from '@layouts/Base.astro';
+import Footer from '../../client/components/misc/Footer';
+import Nav from '../../client/components/Form/Nav';
+
+// Fetch all markdown files in the blog directory
+const posts = await Astro.glob('./*.md');
+// Sort by publish date (newest first)
+posts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
+---
+
+<Base title="SiteScan Blog" description="Latest updates and articles from the SiteScan team.">
+  <div class="blog-layout-wrapper">
+    <Nav client:load />
+    
+    <main class="blog-container">
+      <header class="blog-header">
+        <h1>SiteScan Blog</h1>
+        <p>The latest news, updates, and deep dives from our team.</p>
+      </header>
+
+      <div class="post-list">
+        {posts.length === 0 ? (
+          <p class="no-posts">No blog posts found yet. Check back later!</p>
+        ) : (
+          posts.map(post => (
+            <a href={post.url} class="post-card">
+              <div class="post-card-content">
+                <h2>{post.frontmatter.title}</h2>
+                <div class="post-meta">
+                  <span class="date">{new Date(post.frontmatter.pubDate).toLocaleDateString()}</span>
+                  <span class="author">By {post.frontmatter.author}</span>
+                </div>
+                <p class="description">{post.frontmatter.description}</p>
+                <span class="read-more">Read article →</span>
+              </div>
+            </a>
+          ))
+        )}
+      </div>
+    </main>
+
+    <Footer client:load />
+  </div>
+</Base>
+
+<style>
+  .blog-layout-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #ffffff;
+    color: #1a1a1a;
+  }
+
+  .blog-container {
+    flex: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    width: 100%;
+  }
+
+  .blog-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .blog-header h1 {
+    font-size: 3rem;
+    color: #4a7700;
+    margin-bottom: 0.5rem;
+  }
+
+  .blog-header p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+
+  .post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .post-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem;
+    transition: all 0.2s ease;
+    box-shadow: 2px 2px 0 #d0d0d0;
+  }
+
+  .post-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 0 #4a7700;
+    border-color: #4a7700;
+  }
+
+  .post-card h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .post-card:hover h2 {
+    color: #4a7700;
+  }
+
+  .post-meta {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .description {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .read-more {
+    font-weight: 600;
+    color: #4a7700;
+    font-size: 0.95rem;
+  }
+</style>
