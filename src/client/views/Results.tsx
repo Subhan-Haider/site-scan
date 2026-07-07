@@ -26,7 +26,7 @@ import keys from 'client/utils/get-keys';
 import useJobs from 'client/hooks/useJobs';
 import { jobs, allCards, allCardIds } from 'client/jobs/registry';
 import { runAnalysis } from 'client/analysis/registry';
-import { downloadReport, downloadJson } from 'client/utils/download-report';
+import { downloadReport, downloadJson, printPdf } from 'client/utils/download-report';
 
 const ResultsOuter = styled.div`
   display: flex;
@@ -272,6 +272,9 @@ const Results = (props: { address?: string }): JSX.Element => {
           <p>Export all scan results for {cardsToShow.length} checks as a portable HTML report or raw JSON data.</p>
         </div>
         <div className="download-buttons">
+          <DownloadButton onClick={() => printPdf(address, jobsState)}>
+            &#11015; PDF Report
+          </DownloadButton>
           <DownloadButton onClick={() => downloadReport(address, jobsState)}>
             &#11015; HTML Report
           </DownloadButton>

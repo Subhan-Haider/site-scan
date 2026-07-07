@@ -1,7 +1,4 @@
-/**
- * Generates and downloads a self-contained HTML report for a SiteScan analysis.
- */
-export const downloadReport = (address: string, jobsState: Record<string, any>) => {
+const generateReportHtml = (address: string, jobsState: Record<string, any>) => {
   const timestamp = new Date().toLocaleString();
   const siteName = (() => {
     try {
@@ -12,7 +9,6 @@ export const downloadReport = (address: string, jobsState: Record<string, any>) 
     }
   })();
 
-  // Collect all successful results
   const results: { id: string; data: any }[] = [];
   Object.entries(jobsState).forEach(([id, entry]: [string, any]) => {
     if (entry?.state === 'success' && entry.raw !== undefined) {
@@ -20,7 +16,6 @@ export const downloadReport = (address: string, jobsState: Record<string, any>) 
     }
   });
 
-  // Format a value for display
   const format = (val: any, depth = 0): string => {
     if (val === null || val === undefined) return '<span class="null">—</span>';
     if (typeof val === 'boolean') return `<span class="bool">${val}</span>`;
@@ -56,7 +51,7 @@ export const downloadReport = (address: string, jobsState: Record<string, any>) 
     security: 'Security.txt', screenshot: 'Screenshot',
   };
 
-  const html = `<!DOCTYPE html>
+  return `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -69,7 +64,7 @@ export const downloadReport = (address: string, jobsState: Record<string, any>) 
     header h1 { color: #4a7700; font-size: 2rem; }
     header p { color: #555; font-size: 0.9rem; margin-top: 0.5rem; }
     .badge { display: inline-block; background: #4a7700; color: #fff; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.75rem; margin-left: 0.5rem; vertical-align: middle; }
-    .section { background: #fff; border-radius: 4px; box-shadow: 2px 2px 0 #d0d0d0; margin-bottom: 1.5rem; overflow: hidden; }
+    .section { background: #fff; border-radius: 4px; box-shadow: 2px 2px 0 #d0d0d0; margin-bottom: 1.5rem; overflow: hidden; page-break-inside: avoid; }
     .section-header { background: #f0f0f0; border-bottom: 1px solid #d0d0d0; padding: 0.8rem 1.5rem; font-weight: bold; font-size: 0.95rem; color: #4a7700; }
     .section-body { padding: 1.2rem 1.5rem; overflow-x: auto; }
     table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
@@ -84,6 +79,11 @@ export const downloadReport = (address: string, jobsState: Record<string, any>) 
     footer { text-align: center; color: #999; font-size: 0.8rem; margin-top: 2rem; }
     .no-data { color: #999; font-style: italic; font-size: 0.9rem; }
     h2 { font-size: 1rem; }
+    @media print {
+      body { background: #fff; padding: 0; }
+      header { box-shadow: none; border: 1px solid #d0d0d0; border-left: 6px solid #4a7700; }
+      .section { box-shadow: none; border: 1px solid #d0d0d0; }
+    }
   </style>
 </head>
 <body>
@@ -105,7 +105,14 @@ export const downloadReport = (address: string, jobsState: Record<string, any>) 
   </footer>
 </body>
 </html>`;
+};
 
+/**
+ * Generates and downloads a self-contained HTML report for a SiteScan analysis.
+ */
+export const downloadReport = (address: string, jobsState: Record<string, any>) => {
+  const html = generateReportHtml(address, jobsState);
+  const siteName = address.replace(/^https?:\/\//i, '').replace(/^www\./, '');
   const blob = new Blob([html], { type: 'text/html' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
@@ -115,6 +122,19 @@ export const downloadReport = (address: string, jobsState: Record<string, any>) 
   a.click();
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
+};
+
+/**
+ * Opens a print dialog to save the report as PDF.
+ */
+export const printPdf = (address: string, jobsState: Record<string, any>) => {
+  const html = generateReportHtml(address, jobsState);
+  const printWindow = window.open('', '_blank');
+  if (printWindow) {
+    printWindow.document.write(html);
+    printWindow.document.write('<script>window.onload = function() { window.print(); };</script>');
+    printWindow.document.close();
+  }
 };
 
 /**
