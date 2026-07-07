@@ -11,7 +11,7 @@
     "build": "astro check && astro build",
     "dev:vercel": "PLATFORM='vercel' npx vercel dev",
     "dev:netlify": "PLATFORM='netlify' npx netlify dev",
-    "dev:api": "cross-env DISABLE_GUI=true PORT=3001 nodemon server",
+    "dev:api": "cross-env DISABLE_GUI=true PORT=3001 nodemon --ignore public/ --ignore src/client/ server",
     "dev:astro": "cross-env PUBLIC_API_ENDPOINT=http://localhost:3001/api astro dev",
     "dev": "concurrently -c magenta,cyan -n backend,frontend \"npm run dev:api\" \"npm run dev:astro\"",
     "typecheck": "astro check",
