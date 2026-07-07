@@ -1,0 +1,126 @@
+---
+import BaseLayout from '@layouts/Base.astro';
+import Footer from '@components/scafold/Footer.astro';
+import HomeBackground from '@/components/homepage/HomeBackground';
+---
+
+<BaseLayout>
+  <main class="not-found-page">
+    <div class="container">
+      <h1 class="glitch-title">404</h1>
+      <h2>Target Not Found</h2>
+      <p>
+        The coordinates you entered don't exist in our database.<br />
+        The page may have been moved, deleted, or never existed.
+      </p>
+      
+      <div class="actions">
+        <a href="/" class="btn-primary">Return to Base</a>
+        <a href="/check" class="btn-secondary">Start a Scan</a>
+      </div>
+    </div>
+  </main>
+  <Footer />
+  <HomeBackground client:only="react" />
+</BaseLayout>
+
+<style lang="scss">
+  @use '@styles/global.scss' as *;
+  @use '@styles/colors.scss' as *;
+
+  .not-found-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    padding: 2rem;
+
+    .container {
+      background: var(--background-lighter);
+      padding: 4rem 3rem;
+      border-radius: 16px;
+      border: 1px solid var(--bg-shadow-color);
+      box-shadow: 4px 4px 0 var(--bg-shadow-color);
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .glitch-title {
+      font-size: 8rem;
+      font-weight: 900;
+      line-height: 1;
+      margin: 0;
+      color: var(--primary);
+      text-shadow: 0 0 20px rgba(74, 119, 0, 0.5);
+      letter-spacing: -2px;
+      font-family: var(--font-mono);
+      
+      @include tablet-landscape-down {
+        font-size: 5rem;
+      }
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin: 1rem 0;
+      color: var(--text-color);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+
+    p {
+      color: var(--text-color-secondary);
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
+
+    .actions {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      
+      @include tablet-landscape-down {
+        flex-direction: column;
+      }
+
+      a {
+        padding: 0.8rem 2rem;
+        border-radius: 6px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+      }
+
+      .btn-primary {
+        background: var(--primary);
+        color: #fff;
+        box-shadow: 0 4px 12px rgba(74, 119, 0, 0.3);
+        
+        &:hover {
+          background: #5b9200;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 16px rgba(74, 119, 0, 0.4);
+        }
+      }
+
+      .btn-secondary {
+        background: transparent;
+        color: var(--primary);
+        border: 2px solid var(--primary);
+        
+        &:hover {
+          background: rgba(74, 119, 0, 0.1);
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+</style>

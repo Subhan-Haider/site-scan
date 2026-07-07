@@ -324,7 +324,7 @@ export const jobs: JobSpec[] = [
   {
     id: 'sitemap',
     expectedAddressTypes: [...URL_ONLY],
-    cards: [card('sitemap', 'Pages', ['meta'], SitemapCard)],
+    cards: [card('sitemap', 'Sitemap', ['meta'], SitemapCard)],
     fetcher: fetchAndProcess('sitemap?url=${url}'),
   },
   {

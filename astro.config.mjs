@@ -4,7 +4,6 @@ import { loadEnv } from 'vite';
 // Integrations
 import svelte from '@astrojs/svelte';
 import react from '@astrojs/react';
-import sitemap from '@astrojs/sitemap';
 
 // Adapters
 import vercelAdapter from '@astrojs/vercel';
@@ -35,7 +34,7 @@ const base = unwrapEnvVar('BASE_URL', '/');
 const isBossServer = unwrapEnvVar('BOSS_SERVER', false);
 
 // Initialize Astro integrations
-const integrations = [svelte(), react(), sitemap()];
+const integrations = [svelte(), react()];
 
 // Set the appropriate adapter, based on the deploy target
 function getAdapter(target) {
