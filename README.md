@@ -83,7 +83,7 @@ Make sure you have Node.js (v18+) and npm/yarn installed.
 
 2. **Install dependencies**
    ```bash
-   npm install
+   npm install --legacy-peer-deps
    ```
 
 3. **Run the development server**
